@@ -8,9 +8,9 @@ Cube origami by Jo Nakashima - https://www.youtube.com/watch?v=0oMf8L9ekys
 
 To do:
 
-- initial setup
-- create grid
-- change block color
-- change block image
-- print
-- print diffent sizes
+- [X] initial setup
+- [X] create grid
+- [ ] change block color
+- [ ] change block image
+- [ ] print
+- [ ] print diffent sizes
