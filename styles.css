@@ -1,11 +1,52 @@
+#origami-grid-container {
+    display: flex;
+} 
+
 #origami-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#origami-grid-helper {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;   
+    box-sizing: border-box;
 }
 
 .origami-cell {
     border: 1px solid black;
+    box-sizing: border-box;
     width: 5rem;
     height: 5rem;
+}
+
+.origami-cell-helper {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 12rem;
+    height: 5rem;
+}
+
+#origami-all {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 14rem;
+    height: 5rem;   
+    box-sizing: content-box;
+}
+
+.origami-all-top {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid black;
+}
+
+.origami-all-bottom {
+    width: 2rem;
+    height: 5rem;
+    border: 1px solid black;
 }
