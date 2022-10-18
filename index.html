@@ -21,13 +21,16 @@
         
 
         <div id="origami-all">
-            <div class="origami-all-top color-all-container">
-                <select name="color" id="color-all" onchange="changeAllCellsColor(this)">
+            <div class="origami-all-top" id="color-all-container">
+                <select name="color" id="simple-colorpicker-all" >
                 </select>
+                <input type="color" id="colorpicker-all" value="#0000ff" onchange="changeColor(this)">
             </div>
             <div class="origami-all-top"></div>
-            <div class="origami-all-bottom bg-red-500 "></div>
-            <div class="origami-all-bottom bg-green-500"></div>
+            <div class="origami-all-bottom bg-red-500 " ></div>
+            <div class="origami-all-bottom bg-green-500" onclick="changeCellsColorAll()">
+
+            </div>
             
         </div>
 
