@@ -10,7 +10,18 @@ To do:
 
 - [X] initial setup
 - [X] create grid
-- [ ] change block color
-- [ ] change block image
+- [ ] change block color Component
+    - [X] make generic functions
+    - [X] alternate between normal pickColor and advanced pickColor
+    - [X] change the color of the color container when select a color
+    - [X] apply the selected color to grid
+    - [ ] apply styles to the component
+- [ ] change block image Component
+    - [ ] upload image
+    - [ ] apply image to grid
+    - [ ] apply styles to the component
+- [ ] Apply the Color/Image Component
+    - [ ] Apply component to lines
+    - [ ]~Apply component to individual cells
 - [ ] print
 - [ ] print diffent sizes
