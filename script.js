@@ -101,6 +101,8 @@ const COLORS = [
     },
 ]
 
+const DEAFAULT_COLOR = "#FFFFFF";
+
 // Utils
 
 /**
@@ -159,8 +161,8 @@ function getColorPickerList(colorPickerSelectorList) {
 /**
  * Gets the colorPickers selected colors of given colorPicker's selectors
  *
- * @param {array<string>} colorPickerSelectorList colorPicker's selector
- * @return {array<string>} colorPickers's selectec colors
+ * @param {array<string>} colorPickerSelectorList colorPicker's selector list
+ * @return {array<string>} colorPickers's selected colors
  */
 function getColorPickerColorList(colorPickerSelectorList) {
     let colorPickerColorList = []
@@ -180,11 +182,10 @@ function getColorPickerColorList(colorPickerSelectorList) {
  * @param {array<string>} optionList list of options
  */
 function fillSelectOption(selectComponentId, optionList) {
-    var select = document.querySelector(selectComponentId);
+    let select = document.querySelector(selectComponentId);
     select.innerHTML = "";
     optionList.forEach((color) => {
-        console.log(color);
-        var option = document.createElement("option");
+        let option = document.createElement("option");
         option.value = color.code;
         option.innerHTML = color.name;
         select.appendChild(option);
@@ -220,6 +221,8 @@ function changeCellsColorAll() {
 
 }
 
+const resetCellsColorAll = () => changeBackgroundColor(CELL_SELECTOR.ALL, DEAFAULT_COLOR);
+
 
 // Container
 function changeColorContainerAll() {
@@ -242,6 +245,7 @@ function toggleColorPicker(selectorColorPickerList) {
 
     colorpicker1.classList.toggle("show");
     colorpicker2.classList.toggle("show");
+
     colorpicker1.classList.toggle("hide");
     colorpicker2.classList.toggle("hide");
 

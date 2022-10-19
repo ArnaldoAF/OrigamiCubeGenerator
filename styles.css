@@ -39,22 +39,47 @@
     box-sizing: content-box;
 }
 
-.origami-all-top {
+.color-container, .image-container {
     width: 5rem;
     height: 5rem;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
-.origami-all-bottom {
+.origami-option {
     width: 2rem;
     height: 5rem;
     border: 1px solid black;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.advanced-colorpicker-checkbox {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 0px 4px 4px;
+    color: white;
+}
+
+.colorpicker-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple-colorpicker {
+    border: 1px solid;
+    border-radius: 4px;
 }
 
 input[type="color"] {
 	-webkit-appearance: none;
-	border: none;
-	width: 32px;
+	border: 2px solid;
+    border-radius: 4px;
+	width: 42px;
 	height: 32px;
 }
 input[type="color"]::-webkit-color-swatch-wrapper {

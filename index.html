@@ -18,24 +18,32 @@
         <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded ">
             Download
         </button>
-        
+
 
         <div id="origami-all">
-            <div class="origami-all-top" id="color-container-all">
-                <div>
-                    <input type="checkbox" id="advanced-colorpicker-all" name="advanced-colorpicker-all" onclick="toggleColorPickerAll(this)">
+            <div class="color-container" id="color-container-all">
+                <div class="advanced-colorpicker-checkbox">
+                    <input type="checkbox" id="advanced-colorpicker-all" name="advanced-colorpicker-all"
+                        onclick="toggleColorPickerAll(this)">
                     <label for="advanced-colorpicker-all">Advanced</label>
-                  </div>
-                <select name="color" id="simple-colorpicker-all" class="show asd" onchange="changeColorContainerAll(this)">
-                </select>
-                <input type="color" id="colorpicker-all" value="#0000ff" onchange="changeColorContainerAll(this)" class="hide">
-            </div>
-            <div class="origami-all-top"></div>
-            <div class="origami-all-bottom bg-red-500 " ></div>
-            <div class="origami-all-bottom bg-green-500" onclick="changeCellsColorAll()">
+                </div>
+                <div class="colorpicker-container">
+                    <select name="color" id="simple-colorpicker-all" class="show simple-colorpicker"
+                        onchange="changeColorContainerAll(this)">
+                    </select>
+                    <input type="color" id="colorpicker-all" value="#0000ff" onchange="changeColorContainerAll(this)"
+                        class="hide">
+                </div>
 
             </div>
-            
+            <div class="image-container"></div>
+            <div class="origami-option bg-red-500" onclick="resetCellsColorAll()">
+                <img src="assets/close-thick.svg" alt="">
+            </div>
+            <div class="origami-option bg-green-500" onclick="changeCellsColorAll()">
+                <img src="assets/check-bold.svg" alt="">
+            </div>
+
         </div>
 
         <div id="origami-grid-container" class="mt-4">
@@ -46,40 +54,40 @@
                 <div class="origami-cell-helper" id="cell-helper-4"></div>
                 <div class="origami-cell-helper" id="cell-helper-5"></div>
             </div>
-            <div id="origami-grid" >
+            <div id="origami-grid">
                 <div class="origami-cell line-1" id="cell-1"></div>
                 <div class="origami-cell line-1" id="cell-2"></div>
                 <div class="origami-cell line-1" id="cell-3"></div>
                 <div class="origami-cell line-1" id="cell-4"></div>
                 <div class="origami-cell line-1" id="cell-5"></div>
-    
+
                 <div class="origami-cell line-2" id="cell-6"></div>
                 <div class="origami-cell line-2" id="cell-7"></div>
                 <div class="origami-cell line-2" id="cell-8"></div>
                 <div class="origami-cell line-2" id="cell-9"></div>
                 <div class="origami-cell line-2" id="cell-10"></div>
-    
+
                 <div class="origami-cell line-3" id="cell-11"></div>
                 <div class="origami-cell line-3" id="cell-12"></div>
                 <div class="origami-cell line-3" id="cell-13"></div>
                 <div class="origami-cell line-3" id="cell-14"></div>
                 <div class="origami-cell line-3" id="cell-15"></div>
-    
+
                 <div class="origami-cell line-4" id="cell-16"></div>
                 <div class="origami-cell line-4" id="cell-17"></div>
                 <div class="origami-cell line-4" id="cell-18"></div>
                 <div class="origami-cell line-4" id="cell-19"></div>
                 <div class="origami-cell line-4" id="cell-20"></div>
-    
+
                 <div class="origami-cell line-5" id="cell-21"></div>
                 <div class="origami-cell line-5" id="cell-22"></div>
                 <div class="origami-cell line-5" id="cell-23"></div>
                 <div class="origami-cell line-5" id="cell-24"></div>
                 <div class="origami-cell line-5" id="cell-25"></div>
-    
+
             </div>
         </div>
-        
+
 
     </div>
     <script src="script.js"></script>
