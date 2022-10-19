@@ -103,6 +103,12 @@ const COLORS = [
 
 // Utils
 
+/**
+ * Change an element's background with a color
+ *
+ * @param {string} selector element's selector
+ * @param {string} color color
+ */
 function changeBackgroundColor(selector, color) {
     let allgrids = document.querySelectorAll(selector);
     allgrids.forEach((item) => {
@@ -110,33 +116,56 @@ function changeBackgroundColor(selector, color) {
     })
 }
 
+/**
+ * Change the background of a list of elements with a color
+ *
+ * @param {array<string>} selectorList element's selector list
+ * @param {string} color color
+ */
 function changeBackgroundColorList(selectorList, color) {
     selectorList.forEach((selector) => {
         changeBackgroundColor(selector, color);
     })
 }
 
-
-function getColorPickerColor(colorPickerId) {
-    const colorpicker = document.querySelector(colorPickerId);
+/**
+ * Gets the selected color of given colorPicker
+ *
+ * @param {string} colorPickerSelector colorPicker's selector
+ * @return {string} colorPicker's color
+ */
+function getColorPickerColor(colorPickerSelector) {
+    const colorpicker = document.querySelector(colorPickerSelector);
 
     return colorpicker.value;
 }
 
-function getColorPickerList(selectorList) {
+/**
+ * Gets the colorPicker Elements of given colorPicker's selectors
+ *
+ * @param {array<string>} colorPickerSelectorList colorPicker's selector list
+ * @return {array} colorPickers element list
+ */
+function getColorPickerList(colorPickerSelectorList) {
     let colorPickerList = []
-    selectorList.forEach((selector) => {
-        const colorPicker = document.querySelector(selector);
+    colorPickerSelectorList.forEach((colorPickerSelector) => {
+        const colorPicker = document.querySelector(colorPickerSelector);
         colorPickerList.push(colorPicker);
     });
 
     return colorPickerList;
 }
 
-function getColorPickerColorList(selectorList) {
+/**
+ * Gets the colorPickers selected colors of given colorPicker's selectors
+ *
+ * @param {array<string>} colorPickerSelectorList colorPicker's selector
+ * @return {array<string>} colorPickers's selectec colors
+ */
+function getColorPickerColorList(colorPickerSelectorList) {
     let colorPickerColorList = []
-    selectorList.forEach((selector) => {
-        const colorPickerColor = getColorPickerColor((selector));
+    colorPickerSelectorList.forEach((colorPickerSelector) => {
+        const colorPickerColor = getColorPickerColor((colorPickerSelector));
         colorPickerColorList.push(colorPickerColor);
     });
 
@@ -144,7 +173,12 @@ function getColorPickerColorList(selectorList) {
 }
 
 
-
+/**
+ * Fill a select input with a list of option
+ *
+ * @param {string} selectComponentId Id of the select input
+ * @param {array<string>} optionList list of options
+ */
 function fillSelectOption(selectComponentId, optionList) {
     var select = document.querySelector(selectComponentId);
     select.innerHTML = "";
@@ -195,13 +229,26 @@ function changeColorContainerAll() {
     );
 }
 
-function toggleColorPickerAll() {
-    const [colorpicker1, colorpicker2] = getColorPickerList([SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL]);
+
+// toggle ColorPicker
+
+/**
+ * Alternates the colorPickers showing and hiding
+ *
+ * @param {array<string>} selectorColorPickerList List of the colorPicker's selectors that will be toggled
+ */
+function toggleColorPicker(selectorColorPickerList) {
+    const [colorpicker1, colorpicker2] = getColorPickerList(selectorColorPickerList);
 
     colorpicker1.classList.toggle("show");
     colorpicker2.classList.toggle("show");
     colorpicker1.classList.toggle("hide");
     colorpicker2.classList.toggle("hide");
+
+}
+
+function toggleColorPickerAll() {
+    toggleColorPicker([SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL]);
 }
 
 function loadColorSelect() {
