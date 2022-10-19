@@ -116,10 +116,31 @@ function changeBackgroundColorList(selectorList, color) {
     })
 }
 
+
 function getColorPickerColor(colorPickerId) {
     const colorpicker = document.querySelector(colorPickerId);
 
     return colorpicker.value;
+}
+
+function getColorPickerList(selectorList) {
+    let colorPickerList = []
+    selectorList.forEach((selector) => {
+        const colorPicker = document.querySelector(selector);
+        colorPickerList.push(colorPicker);
+    });
+
+    return colorPickerList;
+}
+
+function getColorPickerColorList(selectorList) {
+    let colorPickerColorList = []
+    selectorList.forEach((selector) => {
+        const colorPickerColor = getColorPickerColor((selector));
+        colorPickerColorList.push(colorPickerColor);
+    });
+
+    return colorPickerColorList;
 }
 
 
@@ -137,15 +158,50 @@ function fillSelectOption(selectComponentId, optionList) {
 }
 
 
+// Change Color Functions
 
-const changeAllCellsColor1 = (e) => changeBackgroundColorList([CELL_SELECTOR.ALL, COLORPICKER_CONTAINER.ALL], e.value);
+/**
+ * Change any Square's color given the colorPicker selectors and the square Selectors
+ *
+ * @param {array<string>} selectorColorPickerList List of the colorPicker's selectors, this colorPickers will return the collors
+ * @param {string} squareSelector The selector of the squares that will have thier color changed
+ */
+function changeColorSquare(selectorColorPickerList, squareSelector) {
+    const [colorpicker1Color, colorpicker2Color] = getColorPickerColorList(selectorColorPickerList)
+    const [colorpicker1] = getColorPickerList(selectorColorPickerList);
 
-function changeCellsColorAll () {
-    // get values from color picker
-    const color1 = getColorPickerColor(SIMPLE_COLORPICKER_SELECTOR.ALL);
-    const color2 = getColorPickerColor(COLORPICKER_SELECTOR.ALL);
+    if (colorpicker1.className.includes("show"))
+        changeBackgroundColor(squareSelector, colorpicker1Color);
+    else
+        changeBackgroundColor(squareSelector, colorpicker2Color);
+}
 
-    changeBackgroundColorList([CELL_SELECTOR.ALL, COLORPICKER_CONTAINER.ALL], color1);
+
+// Cells
+function changeCellsColorAll() {
+    changeColorSquare(
+        [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
+        CELL_SELECTOR.ALL
+    );
+
+}
+
+
+// Container
+function changeColorContainerAll() {
+    changeColorSquare(
+        [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
+        COLORPICKER_CONTAINER.ALL
+    );
+}
+
+function toggleColorPickerAll() {
+    const [colorpicker1, colorpicker2] = getColorPickerList([SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL]);
+
+    colorpicker1.classList.toggle("show");
+    colorpicker2.classList.toggle("show");
+    colorpicker1.classList.toggle("hide");
+    colorpicker2.classList.toggle("hide");
 }
 
 function loadColorSelect() {

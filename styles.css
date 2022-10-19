@@ -63,3 +63,15 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
+
+label {
+    font-size: 0.8rem;
+}
+
+.show {
+    display:block;
+}
+
+.hide {
+    display:none;
+}

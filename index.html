@@ -21,10 +21,14 @@
         
 
         <div id="origami-all">
-            <div class="origami-all-top" id="color-all-container">
-                <select name="color" id="simple-colorpicker-all" >
+            <div class="origami-all-top" id="color-container-all">
+                <div>
+                    <input type="checkbox" id="advanced-colorpicker-all" name="advanced-colorpicker-all" onclick="toggleColorPickerAll(this)">
+                    <label for="advanced-colorpicker-all">Advanced</label>
+                  </div>
+                <select name="color" id="simple-colorpicker-all" class="show asd" onchange="changeColorContainerAll(this)">
                 </select>
-                <input type="color" id="colorpicker-all" value="#0000ff" onchange="changeColor(this)">
+                <input type="color" id="colorpicker-all" value="#0000ff" onchange="changeColorContainerAll(this)" class="hide">
             </div>
             <div class="origami-all-top"></div>
             <div class="origami-all-bottom bg-red-500 " ></div>
