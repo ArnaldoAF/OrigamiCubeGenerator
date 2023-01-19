@@ -17,7 +17,7 @@ To do:
     - [X] apply the selected color to grid
     - [x] apply styles to the component
 - [ ] change block image Component
-    - [ ] upload image
+    - [X] upload image
     - [ ] apply image to grid
     - [ ] apply styles to the component
 - [ ] Apply the Color/Image Component
