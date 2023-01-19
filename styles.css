@@ -100,8 +100,12 @@ label {
   display: block;
 }
 
+.show-flex {
+    display: flex;
+}
+
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /* image upload*/
@@ -127,8 +131,8 @@ input[type="file"] {
     width: 100%;
     position: absolute;
     top: 0rem;
-    display: flex;
     flex-direction: row-reverse;
+    display: flex;
 }
 
 .image-preview-close {

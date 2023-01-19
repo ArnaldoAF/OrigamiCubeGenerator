@@ -41,9 +41,9 @@
                     <img src="assets/file-upload.svg" alt="">
                 </label>
                 <input type="file" id="imageUploadAll" name="imageUploadAll" />
-                <div class="image-preview" id="imagePreviewAll">
-                    <img src="assets/close-thick.svg" class="image-preview-close">
-                    <img src="assets/close-thick.svg" class="image-preview-image">
+                <div class="image-preview hide" id="imagePreviewContainerAll">
+                    <img src="assets/close-thick.svg" class="image-preview-close" onclick="deleteImage(this)">
+                    <img src="assets/close-thick.svg" class="image-preview-image" id="imagePreviewAll">
                 </div>
             </div>
             <div class="origami-option bg-red-500 hover:bg-red-600" onclick="resetCellsColorAll()">
@@ -99,7 +99,7 @@
 
 
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

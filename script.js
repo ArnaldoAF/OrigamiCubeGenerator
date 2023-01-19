@@ -103,6 +103,18 @@ const COLORS = [
 
 const DEAFAULT_COLOR = "#FFFFFF";
 
+
+const IMAGEPICKER_SELECTOR = {
+
+}
+
+const IMAGEPICKER_CONTAINER = {
+
+}
+
+const IMAGE_PREVIEW_SELECTOR = {
+
+}
 // Utils
 
 /**
@@ -261,6 +273,33 @@ function loadColorSelect() {
 
 function LoadAll() {
     loadColorSelect();
+}
+
+
+// ImagePicker 
+
+var input = document.getElementById("imageUploadAll");
+input.onchange = function () {
+    console.log("input change");
+    var file = input.files[0];
+    let reader = new FileReader();
+    const previewDiv = document.getElementById("imagePreviewContainerAll");
+    previewDiv.classList.remove("hide");
+
+    reader.onloadend = function (e) {
+        let b64 = reader.result.replace(/^data:.+;base64,/, "");
+        let previewImg = document.getElementById("imagePreviewAll");
+        previewImg.setAttribute("src", "data:image/jpeg;base64," + b64);
+    };
+
+    reader.readAsDataURL(file);
+};
+
+function deleteImage() {
+    const previewDiv = document.getElementById("imagePreviewContainerAll");
+    previewDiv.classList.add("hide");
+    let previewImg = document.getElementById("imagePreviewAll");
+    previewImg.setAttribute("src", "");
 }
 
 LoadAll();
