@@ -105,7 +105,7 @@ const DEAFAULT_COLOR = "#FFFFFF";
 
 
 const IMAGEPICKER_SELECTOR = {
-
+    ALL:"#imagePreviewAll"
 }
 
 const IMAGEPICKER_CONTAINER = {
@@ -186,6 +186,22 @@ function getColorPickerColorList(colorPickerSelectorList) {
     return colorPickerColorList;
 }
 
+function changeBackgroundImage(selector, image64) {
+    let allgrids = document.querySelectorAll(selector);
+    allgrids.forEach((item) => {
+        item.setAttribute("style", `background: center / contain no-repeat url('${image64}'); `);
+        console.log(item.style);
+    })
+}
+
+function getImagePickerImage(imagePickerSelector) {
+    const imagePicker = document.querySelector(imagePickerSelector);
+    console.log(imagePicker);
+    console.log(imagePicker.src);
+
+    return imagePicker.src;
+}
+
 
 /**
  * Fill a select input with a list of option
@@ -223,13 +239,23 @@ function changeColorSquare(selectorColorPickerList, squareSelector) {
         changeBackgroundColor(squareSelector, colorpicker2Color);
 }
 
+function changeImageSquare(selectorImage, squareSelector) {
+    const image = getImagePickerImage(selectorImage);
+    changeBackgroundImage(squareSelector, image);
+}
+
 
 // Cells
 function changeCellsColorAll() {
+    changeImageSquare(
+        IMAGEPICKER_SELECTOR.ALL,
+        CELL_SELECTOR.ALL
+    )
     changeColorSquare(
         [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
         CELL_SELECTOR.ALL
     );
+    
 
 }
 
@@ -242,6 +268,7 @@ function changeColorContainerAll() {
         [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
         COLORPICKER_CONTAINER.ALL
     );
+
 }
 
 
