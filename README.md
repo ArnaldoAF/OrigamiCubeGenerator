@@ -19,6 +19,7 @@ To do:
 - [ ] change block image Component
     - [X] upload image
     - [X] apply image to grid
+    - [X] delete image from grid
     - [ ] apply styles to the component
 - [ ] change script to modules
 - [ ] Apply the Color/Image Component

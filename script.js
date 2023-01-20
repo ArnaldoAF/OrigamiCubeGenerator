@@ -190,14 +190,11 @@ function changeBackgroundImage(selector, image64) {
     let allgrids = document.querySelectorAll(selector);
     allgrids.forEach((item) => {
         item.setAttribute("style", `background: center / contain no-repeat url('${image64}'); `);
-        console.log(item.style);
     })
 }
 
 function getImagePickerImage(imagePickerSelector) {
     const imagePicker = document.querySelector(imagePickerSelector);
-    console.log(imagePicker);
-    console.log(imagePicker.src);
 
     return imagePicker.src;
 }
@@ -247,19 +244,28 @@ function changeImageSquare(selectorImage, squareSelector) {
 
 // Cells
 function changeCellsColorAll() {
-    changeImageSquare(
-        IMAGEPICKER_SELECTOR.ALL,
-        CELL_SELECTOR.ALL
-    )
     changeColorSquare(
         [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
         CELL_SELECTOR.ALL
     );
-    
+}
 
+const changeCellsImageAll = () => changeImageSquare(IMAGEPICKER_SELECTOR.ALL, CELL_SELECTOR.ALL)
+
+
+function changeCellsAll() {
+    changeCellsImageAll();
+    changeCellsColorAll();
 }
 
 const resetCellsColorAll = () => changeBackgroundColor(CELL_SELECTOR.ALL, DEAFAULT_COLOR);
+
+const resetCellsImageAll = () => changeBackgroundImage(CELL_SELECTOR.ALL, null);
+
+function resetCellsAll() {
+    resetCellsColorAll();
+    resetCellsImageAll();
+}
 
 
 // Container
@@ -307,8 +313,7 @@ function LoadAll() {
 
 var input = document.getElementById("imageUploadAll");
 input.onchange = function () {
-    console.log("input change");
-    var file = input.files[0];
+    let file = input.files[0];
     let reader = new FileReader();
     const previewDiv = document.getElementById("imagePreviewContainerAll");
     previewDiv.classList.remove("hide");
