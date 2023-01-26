@@ -36,11 +36,20 @@
                 </div>
 
             </div>
-            <div class="image-container"></div>
-            <div class="origami-option bg-red-500 hover:bg-red-600" onclick="resetCellsColorAll()">
+            <div class="image-container">
+                <label class="image-upload" for="imageUploadAll" id="imageUploadAllLabel">
+                    <img src="assets/file-upload.svg" alt="">
+                </label>
+                <input type="file" id="imageUploadAll" name="imageUploadAll" />
+                <div class="image-preview hide" id="imagePreviewContainerAll">
+                    <img src="assets/close-thick.svg" class="image-preview-close" onclick="deleteImage(this)">
+                    <img src="assets/close-thick.svg" class="image-preview-image" id="imagePreviewAll">
+                </div>
+            </div>
+            <div class="origami-option bg-red-500 hover:bg-red-600" onclick="resetCellsAll()">
                 <img src="assets/close-thick.svg" alt="">
             </div>
-            <div class="origami-option bg-green-500 hover:bg-green-600" onclick="changeCellsColorAll()">
+            <div class="origami-option bg-green-500 hover:bg-green-600" onclick="changeCellsAll()">
                 <img src="assets/check-bold.svg" alt="">
             </div>
 

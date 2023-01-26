@@ -103,6 +103,18 @@ const COLORS = [
 
 const DEAFAULT_COLOR = "#FFFFFF";
 
+
+const IMAGEPICKER_SELECTOR = {
+    ALL:"#imagePreviewAll"
+}
+
+const IMAGEPICKER_CONTAINER = {
+
+}
+
+const IMAGE_PREVIEW_SELECTOR = {
+
+}
 // Utils
 
 /**
@@ -174,6 +186,19 @@ function getColorPickerColorList(colorPickerSelectorList) {
     return colorPickerColorList;
 }
 
+function changeBackgroundImage(selector, image64) {
+    let allgrids = document.querySelectorAll(selector);
+    allgrids.forEach((item) => {
+        item.setAttribute("style", `background: center / contain no-repeat url('${image64}'); `);
+    })
+}
+
+function getImagePickerImage(imagePickerSelector) {
+    const imagePicker = document.querySelector(imagePickerSelector);
+
+    return imagePicker.src;
+}
+
 
 /**
  * Fill a select input with a list of option
@@ -211,6 +236,11 @@ function changeColorSquare(selectorColorPickerList, squareSelector) {
         changeBackgroundColor(squareSelector, colorpicker2Color);
 }
 
+function changeImageSquare(selectorImage, squareSelector) {
+    const image = getImagePickerImage(selectorImage);
+    changeBackgroundImage(squareSelector, image);
+}
+
 
 // Cells
 function changeCellsColorAll() {
@@ -218,10 +248,24 @@ function changeCellsColorAll() {
         [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
         CELL_SELECTOR.ALL
     );
+}
 
+const changeCellsImageAll = () => changeImageSquare(IMAGEPICKER_SELECTOR.ALL, CELL_SELECTOR.ALL)
+
+
+function changeCellsAll() {
+    changeCellsImageAll();
+    changeCellsColorAll();
 }
 
 const resetCellsColorAll = () => changeBackgroundColor(CELL_SELECTOR.ALL, DEAFAULT_COLOR);
+
+const resetCellsImageAll = () => changeBackgroundImage(CELL_SELECTOR.ALL, null);
+
+function resetCellsAll() {
+    resetCellsColorAll();
+    resetCellsImageAll();
+}
 
 
 // Container
@@ -230,6 +274,7 @@ function changeColorContainerAll() {
         [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
         COLORPICKER_CONTAINER.ALL
     );
+
 }
 
 
@@ -261,6 +306,32 @@ function loadColorSelect() {
 
 function LoadAll() {
     loadColorSelect();
+}
+
+
+// ImagePicker 
+
+var input = document.getElementById("imageUploadAll");
+input.onchange = function () {
+    let file = input.files[0];
+    let reader = new FileReader();
+    const previewDiv = document.getElementById("imagePreviewContainerAll");
+    previewDiv.classList.remove("hide");
+
+    reader.onloadend = function (e) {
+        let b64 = reader.result.replace(/^data:.+;base64,/, "");
+        let previewImg = document.getElementById("imagePreviewAll");
+        previewImg.setAttribute("src", "data:image/jpeg;base64," + b64);
+    };
+
+    reader.readAsDataURL(file);
+};
+
+function deleteImage() {
+    const previewDiv = document.getElementById("imagePreviewContainerAll");
+    previewDiv.classList.add("hide");
+    let previewImg = document.getElementById("imagePreviewAll");
+    previewImg.setAttribute("src", "");
 }
 
 LoadAll();
