@@ -61,7 +61,6 @@
 
 .advanced-colorpicker-checkbox {
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 0px 0px 4px 4px;
   color: white;
 }
 
@@ -79,10 +78,10 @@
 
 input[type="color"] {
   -webkit-appearance: none;
-  border: 2px solid;
+  /* border: 2px solid;
   border-radius: 4px;
   width: 42px;
-  height: 32px;
+  height: 32px; */
   cursor: pointer;
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
