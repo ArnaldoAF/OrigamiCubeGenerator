@@ -31,32 +31,32 @@
 }
 
 #origami-all {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   border: 1px solid black;
   width: 14rem;
   height: 5rem;
-  box-sizing: content-box;
+  box-sizing: content-box; */
 }
 
 .color-container,
 .image-container {
-  width: 5rem;
+  /* width: 5rem;
   height: 5rem;
   border: 1px solid black;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .origami-option {
-  width: 2rem;
+  /* width: 2rem;
   height: 5rem;
   border: 1px solid black;
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 .advanced-colorpicker-checkbox {

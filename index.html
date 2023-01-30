@@ -20,15 +20,17 @@
         </button>
 
 
-        <div id="origami-all">
-            <div class="color-container" id="color-container-all">
-                <div class="advanced-colorpicker-checkbox">
+        <div id="origami-all" class=" rounded p-3 border-solid border-2 border-sky-500 shadow-lg grid gap-4 grid-cols-4">
+            <div class="color-container rounded p-2 border-solid border-2 border-sky-500 flex flex-col" id="color-container-all">
+                <div class="advanced-colorpicker-checkbox p-1 rounded" >
                     <input type="checkbox" id="advanced-colorpicker-all" name="advanced-colorpicker-all"
-                        onclick="toggleColorPickerAll(this)">
-                    <label for="advanced-colorpicker-all">Advanced</label>
+                        onclick="toggleColorPickerAll(this)"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="advanced-colorpicker-all" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Advanced</label>
                 </div>
-                <div class="colorpicker-container">
-                    <select name="color" id="simple-colorpicker-all" class="show simple-colorpicker"
+                <div class="colorpicker-container  flex-1">
+                    <select name="color" id="simple-colorpicker-all" 
+                    class="show simple-colorpicker bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         onchange="changeColorContainerAll(this)">
                     </select>
                     <input type="color" id="colorpicker-all" value="#ffffff" onchange="changeColorContainerAll(this)"
@@ -36,7 +38,7 @@
                 </div>
 
             </div>
-            <div class="image-container">
+            <div class="image-container rounded  border-solid border-2 border-sky-500">
                 <label class="image-upload" for="imageUploadAll" id="imageUploadAllLabel">
                     <img src="assets/file-upload.svg" alt="">
                 </label>
@@ -46,10 +48,10 @@
                     <img src="assets/close-thick.svg" class="image-preview-image" id="imagePreviewAll">
                 </div>
             </div>
-            <div class="origami-option bg-red-500 hover:bg-red-600" onclick="resetCellsAll()">
+            <div class="origami-option bg-red-500 hover:bg-red-600 rounded border-solid border-2 border-sky-500" onclick="resetCellsAll()">
                 <img src="assets/close-thick.svg" alt="">
             </div>
-            <div class="origami-option bg-green-500 hover:bg-green-600" onclick="changeCellsAll()">
+            <div class="origami-option bg-green-500 hover:bg-green-600 rounded border-solid border-2 border-sky-500" onclick="changeCellsAll()">
                 <img src="assets/check-bold.svg" alt="">
             </div>
 
