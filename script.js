@@ -270,12 +270,14 @@ function resetCellsAll() {
 
 // Container
 function changeColorContainerAll() {
+    console.log("changeColorContainerAll");
     changeColorSquare(
         [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
         COLORPICKER_CONTAINER.ALL
     );
 
 }
+
 
 
 // toggle ColorPicker
@@ -304,9 +306,9 @@ function loadColorSelect() {
     fillSelectOption(SIMPLE_COLORPICKER_SELECTOR.ALL, COLORS);
 }
 
-function LoadAll() {
-    loadColorSelect();
-}
+
+
+
 
 
 // ImagePicker 
@@ -332,6 +334,25 @@ function deleteImage() {
     previewDiv.classList.add("hide");
     let previewImg = document.getElementById("imagePreviewAll");
     previewImg.setAttribute("src", "");
+}
+
+// Events 
+function addEventFunctions() {
+    console.log("add events");
+    document.querySelector(SIMPLE_COLORPICKER_SELECTOR.ALL).addEventListener('change', changeColorContainerAll);
+    document.querySelector(COLORPICKER_SELECTOR.ALL).addEventListener('change', changeColorContainerAll);
+    document.querySelector("#advanced-colorpicker-all").addEventListener('click', toggleColorPickerAll);
+
+    document.querySelector("#delete-image-all").addEventListener('click', deleteImage);
+    document.querySelector("#reset-all").addEventListener('click', resetCellsAll);
+    document.querySelector("#apply-all").addEventListener('click', changeCellsAll);
+
+}
+
+
+function LoadAll() {
+    loadColorSelect();
+    addEventFunctions();
 }
 
 LoadAll();
