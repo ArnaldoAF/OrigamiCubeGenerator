@@ -20,10 +20,14 @@ To do:
     - [X] upload image
     - [X] apply image to grid
     - [X] delete image from grid
-- [ ] apply styles to the component
+- [X] apply styles to the picker component
 - [ ] change script to modules
+- [ ] create modal for the picker component
 - [ ] Apply the Color/Image Component
     - [ ] Apply component to lines
     - [ ] Apply component to individual cells
 - [ ] print
 - [ ] print diffent sizes
+- [ ] explanation text
+- [ ] page style
+- [ ] (?) make presets
