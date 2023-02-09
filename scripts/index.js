@@ -25,22 +25,9 @@ import {
     changeColorContainerAll,
 } from './cellsChange.js'
 
-/**
- * Fill a select input with a list of option
- *
- * @param {string} selectComponentId Id of the select input
- * @param {array<string>} optionList list of options
- */
-function fillSelectOption(selectComponentId, optionList) {
-    let select = document.querySelector(selectComponentId);
-    select.innerHTML = "";
-    optionList.forEach((color) => {
-        let option = document.createElement("option");
-        option.value = color.code;
-        option.innerHTML = color.name;
-        select.appendChild(option);
-    });
-}
+import fillSelectOption from './fillSelectOption.js';
+
+import { setImagePreviewEvent, deletePreviewImage } from './imagePreview.js';
 
 
 // toggle ColorPicker
@@ -69,31 +56,15 @@ function loadColorSelect() {
     fillSelectOption(SIMPLE_COLORPICKER_SELECTOR.ALL, COLORS);
 }
 
-
-// ImagePicker 
-
-var input = document.getElementById("imageUploadAll");
-input.onchange = function () {
-    let file = input.files[0];
-    let reader = new FileReader();
-    const previewDiv = document.getElementById("imagePreviewContainerAll");
-    previewDiv.classList.remove("hide");
-
-    reader.onloadend = function (e) {
-        let b64 = reader.result.replace(/^data:.+;base64,/, "");
-        let previewImg = document.getElementById("imagePreviewAll");
-        previewImg.setAttribute("src", "data:image/jpeg;base64," + b64);
-    };
-
-    reader.readAsDataURL(file);
-};
-
-function deleteImage() {
-    const previewDiv = document.getElementById("imagePreviewContainerAll");
-    previewDiv.classList.add("hide");
-    let previewImg = document.getElementById("imagePreviewAll");
-    previewImg.setAttribute("src", "");
+function setImagePreviewEventAll() {
+    setImagePreviewEvent(IMAGEPICKER_SELECTOR.ALL, IMAGE_PREVIEW_SELECTOR.ALL, IMAGEPICKER_CONTAINER.ALL);
 }
+
+function deleteImagePreviewAll() {
+    deletePreviewImage(IMAGE_PREVIEW_SELECTOR.ALL, IMAGEPICKER_CONTAINER.ALL);
+}
+
+
 
 // Events 
 function addEventFunctions() {
@@ -102,7 +73,7 @@ function addEventFunctions() {
     document.querySelector(COLORPICKER_SELECTOR.ALL).addEventListener('change', changeColorContainerAll);
     document.querySelector("#advanced-colorpicker-all").addEventListener('click', toggleColorPickerAll);
 
-    document.querySelector("#delete-image-all").addEventListener('click', deleteImage);
+    document.querySelector("#delete-image-all").addEventListener('click', deleteImagePreviewAll);
     document.querySelector("#reset-all").addEventListener('click', resetCellsAll);
     document.querySelector("#apply-all").addEventListener('click', changeCellsAll);
 
@@ -112,6 +83,7 @@ function addEventFunctions() {
 function LoadAll() {
     loadColorSelect();
     addEventFunctions();
+    setImagePreviewEventAll();
 }
 
 LoadAll();

@@ -105,13 +105,14 @@ export const DEAFAULT_COLOR = "#FFFFFF";
 
 
 export const IMAGEPICKER_SELECTOR = {
-    ALL:"#imagePreviewAll"
+    ALL:"#imageUploadAll"
 }
 
 export const IMAGEPICKER_CONTAINER = {
+    ALL:"#imagePreviewContainerAll"
 
 }
 
 export const IMAGE_PREVIEW_SELECTOR = {
-
+    ALL:"#imagePreviewAll"
 }

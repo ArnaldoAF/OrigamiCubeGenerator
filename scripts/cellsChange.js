@@ -26,7 +26,7 @@ export function changeCellsColorAll() {
     );
 }
 
-export const changeCellsImageAll = () => changeImageSquare(IMAGEPICKER_SELECTOR.ALL, CELL_SELECTOR.ALL)
+export const changeCellsImageAll = () => changeImageSquare(IMAGE_PREVIEW_SELECTOR.ALL, CELL_SELECTOR.ALL)
 
 export function changeColorContainerAll() {
     changeColorSquare(
