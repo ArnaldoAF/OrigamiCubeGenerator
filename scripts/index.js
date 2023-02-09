@@ -11,16 +11,9 @@ import {
 } from './constants.js'
 
 import {
-    changeBackgroundColor,
-    changeBackgroundColorList,
-    getColorPickerColor,
     getColorPickerList,
-    getColorPickerColorList,
-    changeBackgroundImage,
-    getImagePickerImage,
     changeColorSquare,
-    changeImageSquare,
-} from './cellsChangeUtils.js';
+} from './cellChangeUtils/cellsChangeUtils.js';
 
 import {
     changeCellsColorAll,

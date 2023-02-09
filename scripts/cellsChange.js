@@ -12,15 +12,11 @@ import {
 
 import {
     changeBackgroundColor,
-    changeBackgroundColorList,
-    getColorPickerColor,
-    getColorPickerList,
-    getColorPickerColorList,
     changeBackgroundImage,
-    getImagePickerImage,
     changeColorSquare,
-    changeImageSquare,
-} from './cellsChangeUtils.js';
+    changeImageSquare
+
+} from './cellChangeUtils/cellsChangeUtils.js';
 
 
 export function changeCellsColorAll() {
