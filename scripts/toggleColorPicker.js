@@ -1,3 +1,5 @@
+import { getColorPickerList } from './cellChangeUtils/getColorPicker.js';
+
 /**
  * Alternates the colorPickers showing and hiding
  *
