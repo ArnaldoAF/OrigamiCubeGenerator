@@ -39,13 +39,12 @@
   box-sizing: content-box; */
 }
 
-.color-container,
-.image-container {
-  /* width: 5rem;
-  height: 5rem;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column; */
+.color-container {
+  width: 6rem;
+  height: 6rem;
+  /* border: 1px solid black; */
+  /* display: flex; */
+  /* flex-direction: column; */ */
 }
 
 .origami-option {
@@ -59,10 +58,6 @@
   cursor: pointer; */
 }
 
-.advanced-colorpicker-checkbox {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
 
 .colorpicker-container {
   display: flex;
@@ -115,6 +110,7 @@ input[type="file"] {
 
 .image-container {
     position: relative;
+    height: 8rem;
 }
 
 .image-upload {
