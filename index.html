@@ -22,10 +22,11 @@
         </button>
 
 
-        
+
         <!-- Modal toggle -->
-        <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
-            class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+            focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+            text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-6"
             type="button">
             Change All Cells
         </button>
@@ -57,67 +58,83 @@
                     <div class="p-6 space-y-6">
                         <div id="origami-all"
                             class=" rounded p-3 border-solid border-2 border-sky-500 shadow-lg grid gap-4 grid-cols-2">
-                            <div class="color-container rounded p-3 border-solid border-2 border-sky-500 flex flex-col"
-                                id="color-container-all">
+                            <div>
+                                <label
+                                    class=" text-sm font-medium bg-black/[.8] text-slate-100 mb-1 rounded p-0.5">Select
+                                    Color:</label>
+                                <div class="colorpicker-container flex-1 flex flex-row ">
+                                    <div class=" py-1 px-2 rounded w-1/2 flex-1">
+                                        <input type="checkbox" id="advanced-colorpicker-all"
+                                            name="advanced-colorpicker-all"
+                                            class="w-4 h-4 text-blue-600  rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:border-gray-600">
+                                        <label for="advanced-colorpicker-all"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Advanced</label>
+                                    </div>
+                                    <div class=" w-1/2 flex-1">
+                                        <select name="color" id="simple-colorpicker-all"
+                                            class="show simple-colorpicker bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        </select>
+                                        <input type="color" id="colorpicker-all" value="#ffffff"
+                                            class="hide w-full h-2/3 border-gray-300 border-solid border-2 rounded"
+                                            class="hide">
+                                    </div>
 
-                                <div class="colorpicker-container flex-1 flex flex-col">
-                                    <label
-                                        class=" text-sm font-medium bg-black/[.8] text-slate-100 mb-1 rounded p-0.5">Select
-                                        Color:</label>
-                                    <select name="color" id="simple-colorpicker-all"
-                                        class="show simple-colorpicker bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                    </select>
-                                    <input type="color" id="colorpicker-all" value="#ffffff"
-                                        class="hide w-2/3 h-2/3  border-gray-300 border-solid border-2 rounded"
-                                        class="hide">
 
                                 </div>
-                                <div class="advanced-colorpicker-checkbox py-1 px-2 rounded">
-                                    <input type="checkbox" id="advanced-colorpicker-all" name="advanced-colorpicker-all"
-                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                    <label for="advanced-colorpicker-all"
-                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Advanced</label>
+                                <div class="flex-1 flex  justify-center mt-3">
+                                    <div class="color-container rounded p-3 border-solid border-2 border-sky-500 flex flex-col "
+                                        id="color-container-all">
+
+                                    </div>
                                 </div>
 
                             </div>
-                            <div class="image-container rounded-lg  w-32 h-32">
-                                <div class="flex items-center justify-center w-full h-full">
-                                    <label for="imageUploadAll"
-                                        class="flex flex-col items-center justify-center w-full  h-full
-                                border-2 border-gray-300 border-dashed rounded-lg cursor-pointer 
-                                bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
-                                        <div class="flex flex-col items-center justify-center pt-3 pb-3">
-                                            <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none"
-                                                stroke="currentColor" viewBox="0 0 24 24"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
-                                                </path>
+                            <div>
+                                <label
+                                    class=" text-sm font-medium bg-black/[.8] text-slate-100 mb-3 rounded p-0.5">Select
+                                    Image:</label>
+                                <div class="image-container rounded-lg  w-32 h-32 mt-2">
+                                    <div class="flex items-center justify-center w-full h-full">
+                                        <label for="imageUploadAll"
+                                            class="flex flex-col items-center  w-full  h-full
+                                    border-2 border-gray-300 border-dashed rounded-lg cursor-pointer 
+                                    bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                                            <div class="flex flex-col items-center justify-center pt-3 pb-3">
+                                                <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
+                                                    </path>
+                                                </svg>
+                                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                                        class="font-semibold">upload
+                                                        an image</span> </p>
+                                                <p class="text-xs text-gray-500 dark:text-gray-400">or drag and drop</p>
+                                            </div>
+                                            <input id="imageUploadAll" type="file" class="hidden" />
+                                        </label>
+                                    </div>
+                                    <div class="image-preview hide" id="imagePreviewContainerAll">
+                                        <button type="button"
+                                            class="image-preview-close text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 mt-1 mr-1 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                            id="delete-image-all">
+                                            <svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                class="h-32 w-32 [color]-$fill-color" transform:
+                                                scale(var(--grid-item-icon-scale));">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M6 18L18 6M6 6l12 12"></path>
                                             </svg>
-                                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
-                                                    class="font-semibold">upload
-                                                    an image</span> </p>
-                                            <p class="text-xs text-gray-500 dark:text-gray-400">or drag and drop</p>
-                                        </div>
-                                        <input id="imageUploadAll" type="file" class="hidden" />
-                                    </label>
-                                </div>
-                                <div class="image-preview hide" id="imagePreviewContainerAll">
-                                    <button type="button"
-                                        class="image-preview-close text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 mt-1 mr-1 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                        id="delete-image-all">
-                                        <svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                            class="h-32 w-32 [color]-$fill-color" transform:
-                                            scale(var(--grid-item-icon-scale));">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M6 18L18 6M6 6l12 12"></path>
-                                        </svg>
-                                        <span class="sr-only">Icon description</span>
-                                    </button>
-                                    <img src="" class="image-preview-image" id="imagePreviewAll">
+                                            <span class="sr-only">Icon description</span>
+                                        </button>
+                                        <img src="" class="image-preview-image" id="imagePreviewAll">
+                                    </div>
                                 </div>
                             </div>
+
+
 
                         </div>
                     </div>
@@ -130,7 +147,7 @@
                 bg-red-700 hover:bg-red-800 
                 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900
                 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" id="reset-all"
-                data-modal-hide="defaultModal">
+                                data-modal-hide="defaultModal">
                                 Reset
                                 <svg fill="none" class="w-5 h-5 ml-2 -mr-1" stroke="currentColor" stroke-width="3"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -149,7 +166,7 @@
                 mr-2 mb-2 
                 dark:bg-blue-600 dark:hover:bg-blue-700
                 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" id="apply-all"
-                data-modal-hide="defaultModal">
+                                data-modal-hide="defaultModal">
                                 Aplly
                                 <svg fill="none" class="w-5 h-5 ml-2 -mr-1" stroke="currentColor" stroke-width="3"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
