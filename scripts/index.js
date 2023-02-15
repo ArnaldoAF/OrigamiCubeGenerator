@@ -46,6 +46,32 @@ const ApplyChangeCells = () => changeCells(changeType);
 
 const ApplyResetCells = () => resetCells(changeType);
 
+
+function downloadImage() {
+    const grid = document.querySelector("#origami-grid");
+
+    html2canvas(grid,{
+        onclone: (cloneDoc) => {
+            console.log(cloneDoc);
+            const cloneGrid = cloneDoc.querySelector("#origami-grid")
+
+            cloneGrid.classList.remove("origami-grid-normal");
+            cloneGrid.classList.add("origami-grid-big");
+        }
+    }).then(canvas => {
+        //document.body.appendChild(canvas)
+        var image = canvas.toDataURL();
+        // Create a link
+        var aDownloadLink = document.createElement('a');
+        // Add the name of the file to the link
+        aDownloadLink.download = 'origami-grid.png';
+        // Attach the data to the link
+        aDownloadLink.href = image;
+        // Get the code to click the download link
+        aDownloadLink.click();
+    });
+}
+
 // Events 
 function addEventFunctions() {
     document.querySelector(SIMPLE_COLORPICKER_SELECTOR).addEventListener('change', changeColorContainer);
@@ -55,6 +81,8 @@ function addEventFunctions() {
     document.querySelector("#delete-image-all").addEventListener('click', deleteImagePreviewAll);
     document.querySelector("#reset-all").addEventListener('click', ApplyResetCells);
     document.querySelector("#apply-all").addEventListener('click', ApplyChangeCells);
+
+    document.querySelector("#download-image").addEventListener('click', downloadImage);
 
     document.querySelector(OPEN_MODAL_SELECTORS.ALL).addEventListener('click', () => changeModalType(CELL_SELECTOR.ALL));
 
