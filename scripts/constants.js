@@ -11,14 +11,8 @@ export const COLORPICKER_SELECTOR = "#colorpicker-all";
 
 export const SIMPLE_COLORPICKER_SELECTOR = "#simple-colorpicker-all";
 
-export const COLORPICKER_CONTAINER = {
-    ALL: "#color-container-all",
-    LINE_1: "#color-container-1",
-    LINE_2: "#color-container-2",
-    LINE_3: "#color-container-3",
-    LINE_4: "#color-container-4",
-    LINE_5: "#color-container-5",
-}
+export const COLORPICKER_CONTAINER = "#color-container-all";
+
 
 export const OPEN_MODAL_SELECTORS = {
     ALL: "#openModalAll",
@@ -99,15 +93,8 @@ export const COLORS = [
 export const DEAFAULT_COLOR = "#FFFFFF";
 
 
-export const IMAGEPICKER_SELECTOR = {
-    ALL:"#imageUploadAll"
-}
+export const IMAGEPICKER_SELECTOR = "#imageUploadAll";
 
-export const IMAGEPICKER_CONTAINER = {
-    ALL:"#imagePreviewContainerAll"
+export const IMAGEPICKER_CONTAINER = "#imagePreviewContainerAll";
 
-}
-
-export const IMAGE_PREVIEW_SELECTOR = {
-    ALL:"#imagePreviewAll"
-}
+export const IMAGE_PREVIEW_SELECTOR = "#imagePreviewAll";

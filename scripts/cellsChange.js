@@ -19,10 +19,10 @@ import {
 } from './cellChangeUtils/cellsChangeUtils.js';
 
 
-export function changeColorContainerAll() {
+export function changeColorContainer() {
     changeColorSquare(
         [SIMPLE_COLORPICKER_SELECTOR, COLORPICKER_SELECTOR],
-        COLORPICKER_CONTAINER.ALL
+        COLORPICKER_CONTAINER
     );
 
 }
@@ -34,7 +34,7 @@ export function changeCellsColor(cellSelector) {
     );
 }
 
-export const changeCellsImage = (cellSelector) => changeImageSquare(IMAGE_PREVIEW_SELECTOR.ALL, cellSelector)
+export const changeCellsImage = (cellSelector) => changeImageSquare(IMAGE_PREVIEW_SELECTOR, cellSelector)
 
 export function changeCells(cellSelector) {
     changeCellsImage(cellSelector);
