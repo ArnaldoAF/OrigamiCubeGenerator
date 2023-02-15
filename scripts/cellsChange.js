@@ -19,34 +19,33 @@ import {
 } from './cellChangeUtils/cellsChangeUtils.js';
 
 
-export function changeCellsColorAll() {
+export function changeColorContainer() {
     changeColorSquare(
-        [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
-        CELL_SELECTOR.ALL
-    );
-}
-
-export const changeCellsImageAll = () => changeImageSquare(IMAGE_PREVIEW_SELECTOR.ALL, CELL_SELECTOR.ALL)
-
-export function changeColorContainerAll() {
-    changeColorSquare(
-        [SIMPLE_COLORPICKER_SELECTOR.ALL, COLORPICKER_SELECTOR.ALL],
-        COLORPICKER_CONTAINER.ALL
+        [SIMPLE_COLORPICKER_SELECTOR, COLORPICKER_SELECTOR],
+        COLORPICKER_CONTAINER
     );
 
 }
 
-
-export function changeCellsAll() {
-    changeCellsImageAll();
-    changeCellsColorAll();
+export function changeCellsColor(cellSelector) {
+    changeColorSquare(
+        [SIMPLE_COLORPICKER_SELECTOR, COLORPICKER_SELECTOR],
+        cellSelector
+    );
 }
 
-export const resetCellsColorAll = () => changeBackgroundColor(CELL_SELECTOR.ALL, DEAFAULT_COLOR);
+export const changeCellsImage = (cellSelector) => changeImageSquare(IMAGE_PREVIEW_SELECTOR, cellSelector)
 
-export const resetCellsImageAll = () => changeBackgroundImage(CELL_SELECTOR.ALL, null);
+export function changeCells(cellSelector) {
+    changeCellsImage(cellSelector);
+    changeCellsColor(cellSelector);
+}
 
-export function resetCellsAll() {
-    resetCellsColorAll();
-    resetCellsImageAll();
+export const resetCellsColor = (cellSelector) => changeBackgroundColor(cellSelector, DEAFAULT_COLOR);
+
+export const resetCellsImage = (cellSelector) => changeBackgroundImage(cellSelector, null);
+
+export function resetCells(cellSelector) {
+    resetCellsColor(cellSelector);
+    resetCellsImage(cellSelector);
 }

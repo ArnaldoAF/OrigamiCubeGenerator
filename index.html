@@ -27,9 +27,12 @@
         <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
             focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
             text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-6"
+            id="openModalAll"
             type="button">
             Change All Cells
         </button>
+
+
 
         <!-- Main modal -->
         <div id="defaultModal" tabindex="-1" aria-hidden="true"
@@ -143,10 +146,10 @@
                         class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                         <div class="origami-option flex justify-center ">
                             <button type="button" class=" flex 
-                focus:outline-none text-white
-                bg-red-700 hover:bg-red-800 
-                mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900
-                font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" id="reset-all"
+                                focus:outline-none text-white
+                                bg-red-700 hover:bg-red-800 
+                                mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900
+                                font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" id="reset-all"
                                 data-modal-hide="defaultModal">
                                 Reset
                                 <svg fill="none" class="w-5 h-5 ml-2 -mr-1" stroke="currentColor" stroke-width="3"
@@ -184,12 +187,52 @@
         </div>
 
         <div id="origami-grid-container" class="mt-4">
-            <div id="origami-grid-helper" class="mr-4">
-                <div class="origami-cell-helper" id="cell-helper-1"></div>
-                <div class="origami-cell-helper" id="cell-helper-2"></div>
-                <div class="origami-cell-helper" id="cell-helper-3"></div>
-                <div class="origami-cell-helper" id="cell-helper-4"></div>
-                <div class="origami-cell-helper" id="cell-helper-5"></div>
+            <div id="origami-grid-helper  " class="mr-4">
+                <div class="origami-cell-helper flex justify-center items-center " id="cell-helper-1">
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+            focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+            text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "
+                    id="openModalLine1"
+                        type="button">
+                        Change Line 1
+                    </button>
+                </div>
+                <div class="origami-cell-helper flex justify-center items-center" id="cell-helper-2">
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+            focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+            text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "
+                    id="openModalLine2"
+                        type="button">
+                        Change Line 2
+                    </button>
+                </div>
+                <div class="origami-cell-helper flex justify-center items-center" id="cell-helper-3">
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+            focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+            text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "
+                    id="openModalLine3"
+                        type="button">
+                        Change Line 3
+                    </button>
+                </div>
+                <div class="origami-cell-helper flex justify-center items-center" id="cell-helper-4">
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+            focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+            text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "
+                    id="openModalLine4"
+                        type="button">
+                        Change Line 4
+                    </button>
+                </div>
+                <div class="origami-cell-helper flex justify-center items-center" id="cell-helper-5">
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+            focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+            text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "
+                    id="openModalLine5"
+                        type="button">
+                        Change Line 5
+                    </button>
+                </div>
             </div>
             <div id="origami-grid">
                 <div class="origami-cell line-1" id="cell-1"></div>
