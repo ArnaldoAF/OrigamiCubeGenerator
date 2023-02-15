@@ -30,7 +30,7 @@ import toggleColorPicker from './toggleColorPicker.js';
 
 
 
-const toggleColorPickerAll = () => toggleColorPicker(SIMPLE_COLORPICKER_SELECTOR, COLORPICKER_SELECTOR);
+const toggleColorPickerAll = () => toggleColorPicker([SIMPLE_COLORPICKER_SELECTOR, COLORPICKER_SELECTOR]);
 
 const loadColorSelect = () => fillSelectOption(SIMPLE_COLORPICKER_SELECTOR, COLORS);
 
