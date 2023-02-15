@@ -7,23 +7,9 @@ export const CELL_SELECTOR = {
     LINE_5: ".line-5",
 }
 
-export const COLORPICKER_SELECTOR = {
-    ALL: "#colorpicker-all",
-    LINE_1: "#colorpicker-1",
-    LINE_2: "#colorpicker-2",
-    LINE_3: "#colorpicker-3",
-    LINE_4: "#colorpicker-4",
-    LINE_5: "#colorpicker-5",
-}
+export const COLORPICKER_SELECTOR = "#colorpicker-all";
 
-export const SIMPLE_COLORPICKER_SELECTOR = {
-    ALL: "#simple-colorpicker-all",
-    LINE_1: "#simple-colorpicker-1",
-    LINE_2: "#simple-colorpicker-2",
-    LINE_3: "#simple-colorpicker-3",
-    LINE_4: "#simple-colorpicker-4",
-    LINE_5: "#simple-colorpicker-5",
-}
+export const SIMPLE_COLORPICKER_SELECTOR = "#simple-colorpicker-all";
 
 export const COLORPICKER_CONTAINER = {
     ALL: "#color-container-all",
@@ -32,6 +18,15 @@ export const COLORPICKER_CONTAINER = {
     LINE_3: "#color-container-3",
     LINE_4: "#color-container-4",
     LINE_5: "#color-container-5",
+}
+
+export const OPEN_MODAL_SELECTORS = {
+    ALL: "#openModalAll",
+    LINE_1: "#openModalLine1",
+    LINE_2: "#openModalLine2",
+    LINE_3: "#openModalLine3",
+    LINE_4: "#openModalLine4",
+    LINE_5: "#openModalLine5",
 }
 
 export const COLORS = [
