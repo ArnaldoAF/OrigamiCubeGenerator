@@ -17,8 +17,8 @@
         <h1 class="text-6xl mb-2">ORIGAMI CUBE GENERATOR</h1>
         <h1 class="text-2xl mb-5">Origami cube generator for the origami cube developed by Jo Nakashima</h1>
 
-        <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded ">
-            Download
+        <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded" id="download-image">
+            Download as Image
         </button>
 
 
@@ -234,7 +234,7 @@
                     </button>
                 </div>
             </div>
-            <div id="origami-grid">
+            <div id="origami-grid" class="origami-grid-normal">
                 <div class="origami-cell line-1" id="cell-1">
                     <div data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="w-full h-full" id="openModalCell1">
                     </div>
@@ -346,6 +346,7 @@
 
     </div>
     <script type="module" src="scripts/index.js"></script>
+    <script src="scripts/external/html2canvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 
 </body>

@@ -16,11 +16,19 @@
   box-sizing: border-box;
 }
 
+.origami-grid-normal > .origami-cell {
+  width: 5rem;
+  height: 5rem;
+}
+
+.origami-grid-big > .origami-cell {
+  width: 20rem;
+  height: 20rem;
+}
+
 .origami-cell {
   border: 1px solid black;
   box-sizing: border-box;
-  width: 5rem;
-  height: 5rem;
 }
 
 .origami-cell-helper {
@@ -44,7 +52,7 @@
   height: 6rem;
   /* border: 1px solid black; */
   /* display: flex; */
-  /* flex-direction: column; */ */
+  /* flex-direction: column; */ 
 }
 
 .origami-option {
