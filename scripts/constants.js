@@ -161,3 +161,16 @@ export const PDF_OPTIONS_BIG = {
     WIDTH: 210,
     HEIGHT: 210
 }
+
+export const PDF_OPTIONS_MEDIUM = {
+    SQUARE1: {
+        X: 10,
+        Y: 0
+    },
+    SQUARE2: {
+        X: 10,
+        Y: 150
+    },
+    WIDTH: 138,
+    HEIGHT: 138
+}

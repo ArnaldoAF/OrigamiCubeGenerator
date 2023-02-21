@@ -24,7 +24,8 @@ import {
 
 import {
     downloadImage,
-    downloadPdfBig
+    downloadPdfBig,
+    downloadPdfMedium
 } from './canvasDownload.js'
 
 import fillSelectOption from './fillSelectOption.js';
@@ -65,6 +66,7 @@ function addEventFunctions() {
 
     document.querySelector("#download-image").addEventListener('click', downloadImage);
     document.querySelector("#download-pdf").addEventListener('click', downloadPdfBig);
+    document.querySelector("#download-pdf-medium").addEventListener('click', downloadPdfMedium);
 
     document.querySelector(OPEN_MODAL_SELECTORS.ALL).addEventListener('click', () => changeModalType(CELL_SELECTOR.ALL));
 
