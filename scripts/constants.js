@@ -174,3 +174,24 @@ export const PDF_OPTIONS_MEDIUM = {
     WIDTH: 138,
     HEIGHT: 138
 }
+
+export const PDF_OPTIONS_SMALL = {
+    SQUARE1: {
+        X: 3,
+        Y: 0
+    },
+    SQUARE2: {
+        X: 105,
+        Y: 0
+    },
+    SQUARE3: {
+        X: 3,
+        Y: 150
+    },
+    SQUARE4 : {
+        X: 105,
+        Y: 150
+    },
+    WIDTH: 100,
+    HEIGHT: 100
+}

@@ -2,6 +2,7 @@ import {
     FILE_NAME,
     PDF_OPTIONS_BIG,
     PDF_OPTIONS_MEDIUM,
+    PDF_OPTIONS_SMALL,
 } from './constants.js';
 
 const { jsPDF } = window.jspdf;
@@ -60,6 +61,50 @@ export const canvasToPdfMedium = (canvas) => {
     doc.save(`${FILE_NAME}.pdf`);
 }
 
+export const canvasToPdfSmall = (canvas) => {
+    const image = canvas.toDataURL();
+
+    const doc = new jsPDF();
+
+    doc.addImage(
+        image, 
+        'PNG', 
+        PDF_OPTIONS_SMALL.SQUARE1.X, 
+        PDF_OPTIONS_SMALL.SQUARE1.Y, 
+        PDF_OPTIONS_SMALL.WIDTH, 
+        PDF_OPTIONS_SMALL.HEIGHT
+    );
+
+    doc.addImage(
+        image, 
+        'PNG', 
+        PDF_OPTIONS_SMALL.SQUARE2.X, 
+        PDF_OPTIONS_SMALL.SQUARE2.Y, 
+        PDF_OPTIONS_SMALL.WIDTH, 
+        PDF_OPTIONS_SMALL.HEIGHT
+    );
+
+    doc.addImage(
+        image, 
+        'PNG', 
+        PDF_OPTIONS_SMALL.SQUARE3.X, 
+        PDF_OPTIONS_SMALL.SQUARE3.Y, 
+        PDF_OPTIONS_SMALL.WIDTH, 
+        PDF_OPTIONS_SMALL.HEIGHT
+    );
+
+    doc.addImage(
+        image, 
+        'PNG', 
+        PDF_OPTIONS_SMALL.SQUARE4.X, 
+        PDF_OPTIONS_SMALL.SQUARE4.Y, 
+        PDF_OPTIONS_SMALL.WIDTH, 
+        PDF_OPTIONS_SMALL.HEIGHT
+    );
+
+    doc.save(`${FILE_NAME}.pdf`);
+}
+
 export const htmlToCanvas = (callbackFunction) => {
     const grid = document.querySelector("#origami-grid");
 
@@ -78,3 +123,5 @@ export const downloadImage = () => htmlToCanvas(canvasToPNG);
 export const downloadPdfBig = () => htmlToCanvas(canvasToPdfBig);
 
 export const downloadPdfMedium = () => htmlToCanvas(canvasToPdfMedium);
+
+export const downloadPdfSmall = () => htmlToCanvas(canvasToPdfSmall);
