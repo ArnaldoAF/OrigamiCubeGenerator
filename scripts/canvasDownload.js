@@ -1,4 +1,4 @@
-import { PDF_OPTIONS_BIG } from './constants.js';
+import { PDF_OPTIONS_BIG, FILE_NAME } from './constants.js';
 
 const { jsPDF } = window.jspdf;
 
@@ -7,7 +7,7 @@ export const canvasToPNG = (canvas) => {
     // Create a link
     let aDownloadLink = document.createElement('a');
     // Add the name of the file to the link
-    aDownloadLink.download = 'origami-grid.png';
+    aDownloadLink.download = `${FILE_NAME}.png`;
     // Attach the data to the link
     aDownloadLink.href = image;
     // Get the code to click the download link
@@ -18,8 +18,15 @@ export const canvasToPfdBig = (canvas) => {
     const image = canvas.toDataURL();
 
     const doc = new jsPDF();
-    doc.addImage(image, 'PNG', PDF_OPTIONS_BIG.X, PDF_OPTIONS_BIG.Y, PDF_OPTIONS_BIG.WIDTH, PDF_OPTIONS_BIG.HEIGHT);
-    doc.save("origami-grid.pdf");
+    doc.addImage(
+        image, 
+        'PNG', 
+        PDF_OPTIONS_BIG.X, 
+        PDF_OPTIONS_BIG.Y, 
+        PDF_OPTIONS_BIG.WIDTH, 
+        PDF_OPTIONS_BIG.HEIGHT
+    );
+    doc.save(`${FILE_NAME}.pdf`);
 }
 
 export const htmlToCanvas = (callbackFunction) => {

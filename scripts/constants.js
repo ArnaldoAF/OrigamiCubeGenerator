@@ -153,6 +153,8 @@ export const IMAGEPICKER_CONTAINER = "#imagePreviewContainerAll";
 
 export const IMAGE_PREVIEW_SELECTOR = "#imagePreviewAll";
 
+export const FILE_NAME = "origami-grid";
+
 export const PDF_OPTIONS_BIG = {
     X: 0,
     Y: 0,
