@@ -9,7 +9,8 @@ import {
     IMAGEPICKER_CONTAINER,
     IMAGE_PREVIEW_SELECTOR,
     OPEN_MODAL_SELECTORS,
-    BLOCKS
+    BLOCKS,
+    PRESET_LIST_SELECTOR
 } from './constants.js'
 
 import {
@@ -32,8 +33,10 @@ import {
     downloadPdfSmall
 } from './canvasDownload.js';
 
+import presetList from './presets/presets.js';
+
 import marioBlockBrick from './presets/marioBlockBrick.js';
-import { loadPreSet } from './presets/loadPreSet.js';
+import { loadPreSet, ApplyPreset } from './presets/loadPreSet.js';
 
 import fillSelectOption from './fillSelectOption.js';
 
@@ -47,6 +50,7 @@ const { jsPDF } = window.jspdf
 const toggleColorPickerAll = () => toggleColorPicker([SIMPLE_COLORPICKER_SELECTOR, COLORPICKER_SELECTOR]);
 
 const loadColorSelect = () => fillSelectOption(SIMPLE_COLORPICKER_SELECTOR, COLORS);
+const loadPresetList = () => fillSelectOption(PRESET_LIST_SELECTOR, presetList);
 
 const setImagePreviewEventAll = () => setImagePreviewEvent(IMAGEPICKER_SELECTOR, IMAGE_PREVIEW_SELECTOR, IMAGEPICKER_CONTAINER);
 
@@ -70,6 +74,8 @@ function addEventFunctions() {
     document.querySelector("#delete-image-all").addEventListener('click', deleteImagePreviewAll);
     document.querySelector("#reset-all").addEventListener('click', ApplyResetCells);
     document.querySelector("#apply-all").addEventListener('click', ApplyChangeCells);
+
+    document.querySelector("#apply-preset").addEventListener('click', ApplyPreset);
 
     document.querySelector("#download-image").addEventListener('click', downloadImage);
     document.querySelector("#download-pdf").addEventListener('click', downloadPdfBig);
@@ -118,12 +124,13 @@ function loadDefaultImages() {
     // changeBackgroundImage(CELL_SELECTOR.LINE_2, BLOCKS.DASHLINE);
     // changeBackgroundImage(CELL_SELECTOR.LINE_4, BLOCKS.DASHLINE);
 
-    loadPreSet(marioBlockBrick);
+    // loadPreSet(marioBlockBrick);
 }
 
 
 function LoadAll() {
     loadColorSelect();
+    loadPresetList();
     addEventFunctions();
     setImagePreviewEventAll();
     loadDefaultImages();

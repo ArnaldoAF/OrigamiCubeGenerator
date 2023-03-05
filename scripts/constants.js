@@ -196,6 +196,8 @@ export const PDF_OPTIONS_SMALL = {
     HEIGHT: 103
 }
 
+export const PRESET_LIST_SELECTOR = "#preset-list";
+
 export const BLOCKS_PATH = '../assets/blocks/';
 
 export const BLOCKS = {
