@@ -152,3 +152,46 @@ export const IMAGEPICKER_SELECTOR = "#imageUploadAll";
 export const IMAGEPICKER_CONTAINER = "#imagePreviewContainerAll";
 
 export const IMAGE_PREVIEW_SELECTOR = "#imagePreviewAll";
+
+export const FILE_NAME = "origami-grid";
+
+export const PDF_OPTIONS_BIG = {
+    X: 0,
+    Y: 0,
+    WIDTH: 210,
+    HEIGHT: 210
+}
+
+export const PDF_OPTIONS_MEDIUM = {
+    SQUARE1: {
+        X: 10,
+        Y: 0
+    },
+    SQUARE2: {
+        X: 10,
+        Y: 150
+    },
+    WIDTH: 138,
+    HEIGHT: 138
+}
+
+export const PDF_OPTIONS_SMALL = {
+    SQUARE1: {
+        X: 3,
+        Y: 3
+    },
+    SQUARE2: {
+        X: 107,
+        Y: 3
+    },
+    SQUARE3: {
+        X: 3,
+        Y: 150
+    },
+    SQUARE4 : {
+        X: 107,
+        Y: 150
+    },
+    WIDTH: 103,
+    HEIGHT: 103
+}
