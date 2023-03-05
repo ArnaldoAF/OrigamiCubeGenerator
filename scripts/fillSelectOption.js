@@ -7,10 +7,10 @@
 export default function fillSelectOption(selectComponentId, optionList) {
     let select = document.querySelector(selectComponentId);
     select.innerHTML = "";
-    optionList.forEach((color) => {
+    optionList.forEach((item) => {
         let option = document.createElement("option");
-        option.value = color.code;
-        option.innerHTML = color.name;
+        option.value = item.code;
+        option.innerHTML = item.name;
         select.appendChild(option);
     });
 }

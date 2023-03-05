@@ -195,3 +195,13 @@ export const PDF_OPTIONS_SMALL = {
     WIDTH: 103,
     HEIGHT: 103
 }
+
+export const PRESET_LIST_SELECTOR = "#preset-list";
+
+export const BLOCKS_PATH = '../assets/blocks/';
+
+export const BLOCKS = {
+    DASHLINE: `${BLOCKS_PATH}dashline.png`,
+    MARIOBLOCK_BRICK: `${BLOCKS_PATH}marioBlock-brick.png`,
+    MARIOBLOCK_GROUND: `${BLOCKS_PATH}marioBlock-ground.png`,
+}

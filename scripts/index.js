@@ -2,18 +2,17 @@ import {
     CELL_SELECTOR,
     COLORPICKER_SELECTOR,
     SIMPLE_COLORPICKER_SELECTOR,
-    COLORPICKER_CONTAINER,
     COLORS,
-    DEAFAULT_COLOR,
     IMAGEPICKER_SELECTOR,
     IMAGEPICKER_CONTAINER,
     IMAGE_PREVIEW_SELECTOR,
     OPEN_MODAL_SELECTORS,
+    BLOCKS,
+    PRESET_LIST_SELECTOR
 } from './constants.js'
 
 import {
-    getColorPickerList,
-    changeColorSquare,
+    changeBackgroundImage,
 } from './cellChangeUtils/cellsChangeUtils.js';
 
 import {
@@ -27,7 +26,11 @@ import {
     downloadPdfBig,
     downloadPdfMedium,
     downloadPdfSmall
-} from './canvasDownload.js'
+} from './canvasDownload.js';
+
+import presetList from './presetsUtils/presets.js';
+
+import { ApplyPreset } from './presetsUtils/loadPreSet.js';
 
 import fillSelectOption from './fillSelectOption.js';
 
@@ -41,6 +44,7 @@ const { jsPDF } = window.jspdf
 const toggleColorPickerAll = () => toggleColorPicker([SIMPLE_COLORPICKER_SELECTOR, COLORPICKER_SELECTOR]);
 
 const loadColorSelect = () => fillSelectOption(SIMPLE_COLORPICKER_SELECTOR, COLORS);
+const loadPresetList = () => fillSelectOption(PRESET_LIST_SELECTOR, presetList);
 
 const setImagePreviewEventAll = () => setImagePreviewEvent(IMAGEPICKER_SELECTOR, IMAGE_PREVIEW_SELECTOR, IMAGEPICKER_CONTAINER);
 
@@ -64,6 +68,8 @@ function addEventFunctions() {
     document.querySelector("#delete-image-all").addEventListener('click', deleteImagePreviewAll);
     document.querySelector("#reset-all").addEventListener('click', ApplyResetCells);
     document.querySelector("#apply-all").addEventListener('click', ApplyChangeCells);
+
+    document.querySelector("#apply-preset").addEventListener('click', ApplyPreset);
 
     document.querySelector("#download-image").addEventListener('click', downloadImage);
     document.querySelector("#download-pdf").addEventListener('click', downloadPdfBig);
@@ -104,13 +110,22 @@ function addEventFunctions() {
     document.querySelector(OPEN_MODAL_SELECTORS.CELL_23).addEventListener('click', () => changeModalType(CELL_SELECTOR.CELL_23));
     document.querySelector(OPEN_MODAL_SELECTORS.CELL_24).addEventListener('click', () => changeModalType(CELL_SELECTOR.CELL_24));
     document.querySelector(OPEN_MODAL_SELECTORS.CELL_25).addEventListener('click', () => changeModalType(CELL_SELECTOR.CELL_25));
+
+
+}
+
+function loadDefaultImages() {
+    changeBackgroundImage(CELL_SELECTOR.LINE_2, BLOCKS.DASHLINE);
+    changeBackgroundImage(CELL_SELECTOR.LINE_4, BLOCKS.DASHLINE);
 }
 
 
 function LoadAll() {
     loadColorSelect();
+    loadPresetList();
     addEventFunctions();
     setImagePreviewEventAll();
+    loadDefaultImages();
 }
 
 LoadAll();

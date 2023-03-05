@@ -14,7 +14,7 @@ export function changeBackgroundImage(selector, image64) {
 }
 
 /**
- * Change the BackgroundImage of given SQUARE and to an image in a fiven IMAGESELECTOR 
+ * Change the BackgroundImage of given SQUARE and to an image in a given IMAGESELECTOR 
  *
  * @param {string} selectorImage imagePicker's selector
  * @param {string} squareSelector squareSelector
