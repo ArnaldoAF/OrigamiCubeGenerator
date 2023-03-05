@@ -178,20 +178,20 @@ export const PDF_OPTIONS_MEDIUM = {
 export const PDF_OPTIONS_SMALL = {
     SQUARE1: {
         X: 3,
-        Y: 0
+        Y: 3
     },
     SQUARE2: {
-        X: 105,
-        Y: 0
+        X: 107,
+        Y: 3
     },
     SQUARE3: {
         X: 3,
         Y: 150
     },
     SQUARE4 : {
-        X: 105,
+        X: 107,
         Y: 150
     },
-    WIDTH: 100,
-    HEIGHT: 100
+    WIDTH: 103,
+    HEIGHT: 103
 }
