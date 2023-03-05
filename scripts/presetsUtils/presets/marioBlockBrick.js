@@ -1,4 +1,4 @@
-import { BLOCKS, CELL_SELECTOR } from '../constants.js';
+import { BLOCKS, CELL_SELECTOR } from '../../constants.js';
 
 const marioBlockBrick = {
     name: "mario block - brick",

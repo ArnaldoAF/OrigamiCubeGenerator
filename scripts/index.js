@@ -33,10 +33,10 @@ import {
     downloadPdfSmall
 } from './canvasDownload.js';
 
-import presetList from './presets/presets.js';
+import presetList from './presetsUtils/presets.js';
 
-import marioBlockBrick from './presets/marioBlockBrick.js';
-import { loadPreSet, ApplyPreset } from './presets/loadPreSet.js';
+import marioBlockBrick from './presetsUtils/presets/marioBlockBrick.js';
+import { loadPreSet, ApplyPreset } from './presetsUtils/loadPreSet.js';
 
 import fillSelectOption from './fillSelectOption.js';
 
