@@ -30,7 +30,10 @@ import {
     downloadPdfBig,
     downloadPdfMedium,
     downloadPdfSmall
-} from './canvasDownload.js'
+} from './canvasDownload.js';
+
+import marioBlockBrick from './presets/marioBlockBrick.js';
+import { loadPreSet } from './presets/loadPreSet.js';
 
 import fillSelectOption from './fillSelectOption.js';
 
@@ -112,8 +115,10 @@ function addEventFunctions() {
 }
 
 function loadDefaultImages() {
-    changeBackgroundImage(CELL_SELECTOR.LINE_2, BLOCKS.DASHLINE);
-    changeBackgroundImage(CELL_SELECTOR.LINE_4, BLOCKS.DASHLINE);
+    // changeBackgroundImage(CELL_SELECTOR.LINE_2, BLOCKS.DASHLINE);
+    // changeBackgroundImage(CELL_SELECTOR.LINE_4, BLOCKS.DASHLINE);
+
+    loadPreSet(marioBlockBrick);
 }
 
 

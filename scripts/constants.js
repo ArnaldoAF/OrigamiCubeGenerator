@@ -199,5 +199,6 @@ export const PDF_OPTIONS_SMALL = {
 export const BLOCKS_PATH = '../assets/blocks/';
 
 export const BLOCKS = {
-    DASHLINE: `${BLOCKS_PATH}dashline.png`
+    DASHLINE: `${BLOCKS_PATH}dashline.png`,
+    MARIOBLOCK_BRICK: `${BLOCKS_PATH}marioBlock-brick.png`,
 }
