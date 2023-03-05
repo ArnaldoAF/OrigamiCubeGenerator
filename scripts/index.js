@@ -2,7 +2,6 @@ import {
     CELL_SELECTOR,
     COLORPICKER_SELECTOR,
     SIMPLE_COLORPICKER_SELECTOR,
-    COLORPICKER_CONTAINER,
     COLORS,
     DEAFAULT_COLOR,
     IMAGEPICKER_SELECTOR,
@@ -14,10 +13,7 @@ import {
 } from './constants.js'
 
 import {
-    getColorPickerList,
-    changeColorSquare,
     changeBackgroundImage,
-    changeBackgroundColor
 } from './cellChangeUtils/cellsChangeUtils.js';
 
 import {
@@ -35,8 +31,7 @@ import {
 
 import presetList from './presetsUtils/presets.js';
 
-import marioBlockBrick from './presetsUtils/presets/marioBlockBrick.js';
-import { loadPreSet, ApplyPreset } from './presetsUtils/loadPreSet.js';
+import { ApplyPreset } from './presetsUtils/loadPreSet.js';
 
 import fillSelectOption from './fillSelectOption.js';
 
@@ -121,10 +116,8 @@ function addEventFunctions() {
 }
 
 function loadDefaultImages() {
-    // changeBackgroundImage(CELL_SELECTOR.LINE_2, BLOCKS.DASHLINE);
-    // changeBackgroundImage(CELL_SELECTOR.LINE_4, BLOCKS.DASHLINE);
-
-    // loadPreSet(marioBlockBrick);
+    changeBackgroundImage(CELL_SELECTOR.LINE_2, BLOCKS.DASHLINE);
+    changeBackgroundImage(CELL_SELECTOR.LINE_4, BLOCKS.DASHLINE);
 }
 
 
