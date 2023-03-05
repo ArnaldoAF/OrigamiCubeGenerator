@@ -12,11 +12,10 @@ export function loadPreSet(preset) {
 }
 
 export function ApplyPreset() {
-    // pegar valor do select
     const presetElement = document.querySelector(PRESET_LIST_SELECTOR);
     const presetValue = presetElement.value;
-    // achar na lista de presets
+    
     const selectedPreset = presetList.find(preset => preset.code == presetValue);
-    // aplicar preset
+    
     if (selectedPreset) loadPreSet(selectedPreset);
 }
