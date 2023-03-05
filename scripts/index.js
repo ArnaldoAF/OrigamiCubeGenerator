@@ -9,11 +9,14 @@ import {
     IMAGEPICKER_CONTAINER,
     IMAGE_PREVIEW_SELECTOR,
     OPEN_MODAL_SELECTORS,
+    BLOCKS
 } from './constants.js'
 
 import {
     getColorPickerList,
     changeColorSquare,
+    changeBackgroundImage,
+    changeBackgroundColor
 } from './cellChangeUtils/cellsChangeUtils.js';
 
 import {
@@ -104,6 +107,13 @@ function addEventFunctions() {
     document.querySelector(OPEN_MODAL_SELECTORS.CELL_23).addEventListener('click', () => changeModalType(CELL_SELECTOR.CELL_23));
     document.querySelector(OPEN_MODAL_SELECTORS.CELL_24).addEventListener('click', () => changeModalType(CELL_SELECTOR.CELL_24));
     document.querySelector(OPEN_MODAL_SELECTORS.CELL_25).addEventListener('click', () => changeModalType(CELL_SELECTOR.CELL_25));
+
+
+}
+
+function loadDefaultImages() {
+    changeBackgroundImage(CELL_SELECTOR.LINE_2, BLOCKS.DASHLINE);
+    changeBackgroundImage(CELL_SELECTOR.LINE_4, BLOCKS.DASHLINE);
 }
 
 
@@ -111,6 +121,7 @@ function LoadAll() {
     loadColorSelect();
     addEventFunctions();
     setImagePreviewEventAll();
+    loadDefaultImages();
 }
 
 LoadAll();

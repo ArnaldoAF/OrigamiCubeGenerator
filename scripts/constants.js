@@ -195,3 +195,9 @@ export const PDF_OPTIONS_SMALL = {
     WIDTH: 103,
     HEIGHT: 103
 }
+
+export const BLOCKS_PATH = '../assets/blocks/';
+
+export const BLOCKS = {
+    DASHLINE: `${BLOCKS_PATH}dashline.png`
+}
