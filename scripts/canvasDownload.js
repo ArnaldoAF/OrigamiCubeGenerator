@@ -7,6 +7,11 @@ import {
 
 const { jsPDF } = window.jspdf;
 
+/**
+ * Callback function to convert the canvas to PNG
+ *
+ * @param {Object} canvas the return of the canvas download function
+ */
 export const canvasToPNG = (canvas) => {
     let image = canvas.toDataURL();
     // Create a link
@@ -19,6 +24,11 @@ export const canvasToPNG = (canvas) => {
     aDownloadLink.click();
 }
 
+/**
+ * Callback function to convert the canvas to PDF, in big size
+ *
+ * @param {Object} canvas the return of the canvas download function
+ */
 export const canvasToPdfBig = (canvas) => {
     const image = canvas.toDataURL();
 
@@ -35,6 +45,11 @@ export const canvasToPdfBig = (canvas) => {
     doc.save(`${FILE_NAME}.pdf`);
 }
 
+/**
+ * Callback function to convert the canvas to PDF, in medium size
+ *
+ * @param {Object} canvas the return of the canvas download function
+ */
 export const canvasToPdfMedium = (canvas) => {
     const image = canvas.toDataURL();
 
@@ -61,6 +76,11 @@ export const canvasToPdfMedium = (canvas) => {
     doc.save(`${FILE_NAME}.pdf`);
 }
 
+/**
+ * Callback function to convert the canvas to PDF, in small size
+ *
+ * @param {Object} canvas the return of the canvas download function
+ */
 export const canvasToPdfSmall = (canvas) => {
     const image = canvas.toDataURL();
 
@@ -105,6 +125,11 @@ export const canvasToPdfSmall = (canvas) => {
     doc.save(`${FILE_NAME}.pdf`);
 }
 
+/**
+ * Convert the html to canvas
+ *
+ * @param {Function} callbackFunction function that will get the canvas and convert to some format
+ */
 export const htmlToCanvas = (callbackFunction) => {
     const grid = document.querySelector("#origami-grid");
 

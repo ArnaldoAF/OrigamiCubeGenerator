@@ -2,6 +2,11 @@ import { changeBackgroundImage, changeBackgroundColor } from '../cellChangeUtils
 import presetList from './presets.js';
 import { PRESET_LIST_SELECTOR } from '../constants.js';
 
+/**
+ * Load a PRESEt and apply to the grid
+ *
+ * @param {Object} preset a preset object
+ */
 export function loadPreSet(preset) {
     const blocks = preset.blocks;
     blocks.forEach((block) => {
@@ -11,6 +16,10 @@ export function loadPreSet(preset) {
     })
 }
 
+/**
+ * Apply the selected preset to the grid
+ *
+ */
 export function ApplyPreset() {
     const presetElement = document.querySelector(PRESET_LIST_SELECTOR);
     const presetValue = presetElement.value;
