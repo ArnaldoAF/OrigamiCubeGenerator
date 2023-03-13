@@ -28,6 +28,6 @@ To do:
     - [X] Apply component to individual cells
 - [X] print
 - [X] print diffent sizes
-- [ ] explanation text
-- [ ] page style
-- [ ] (?) make presets
+- [X] explanation text
+- [X] page style
+- [X] make presets
