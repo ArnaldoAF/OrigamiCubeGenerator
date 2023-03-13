@@ -12,45 +12,71 @@
     <title>Origami Cube Generator</title>
 </head>
 
-<body class="bg-gradient-to-r from-cyan-500 to-blue-500 ">
-    <div class="container mx-auto bg-white rounded drop-shadow-lg mt-2 p-3 flex items-center flex-col">
-        <h1 class="text-6xl mb-2">ORIGAMI CUBE GENERATOR</h1>
-        <h1 class="text-2xl mb-5">Origami cube generator for the origami cube developed by Jo Nakashima</h1>
+<body class="">
+    <div class="container mx-auto flex items-center flex-col p-4">
+        <h1
+            class="text-6xl mb-4 font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            ORIGAMI CUBE GENERATOR</h1>
+        <h4 class="text-xl font-bold dark:text-white mb-5">This is a tool for create and print sheets to make a cube
+            origami(created and developed by the youtuber Jo Nakashima)</h4>
 
-        <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded" id="download-image">
-            Download as Image
-        </button>
+        <div class="flex mb-4 flex-wrap justify-center">
+            <div class="flex-none mx-2 mb-4">
+                <div
+                    class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">How to use this
+                        tool:</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>
+                            Choose witch cell you want to alter: all cells, by line, or by cell by clicking on it
+                        </li>
+                        <li>
+                            Choose a color/image and apply
+                        </li>
+                        <li>
+                            Choose the downlaod method: PNG or PDF
+                        </li>
+                        <li>
+                            Print and fold! (<a target="_blank" href="https://youtu.be/0oMf8L9ekys"
+                                class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">Like
+                                this!</a>)
+                        </li>
+                    </ul>
+                    </p>
+                </div>
 
-        <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mt-4" id="download-pdf">
-            Download as PDF - BIG
-        </button>
-
-        <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mt-4" id="download-pdf-medium">
-            Download as PDF - MEDIUM
-        </button>
-
-        <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mt-4" id="download-pdf-small">
-            Download as PDF - SMALL
-        </button>
-        <label for="preset-list" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose a pre-set</label>
-        <select id="preset-list"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-
-        </select>
-        <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mt-4" id="apply-preset">
-            Apply pre set
-        </button>
-
-
-
-        <!-- Modal toggle -->
-        <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
-            focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
-            text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-6"
-            id="openModalAll" type="button">
-            Change All Cells
-        </button>
-
+            </div>
+            <div class="flex-none mx-2 my-2">
+                <div
+                    class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tips for choosing
+                        an image:</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>
+                            Use squares images
+                        </li>
+                        <li>
+                            Choose a big size, like 512px x 512px
+                        </li>
+                        <li>
+                            A good site is: <a target="_blank" href="https://game-icons.net"
+                                class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">game-icons.net</a>
+                        </li>
+                        <li>
+                            You can find sprites too in :
+                            <a target="_blank" href="https://www.spriters-resource.com/"
+                                class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">spriters-resource.com</a>
+                            and
+                            <a target="_blank" href="https://opengameart.org/"
+                                class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">opengameart.org</a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Main modal -->
@@ -205,6 +231,12 @@
             </div>
         </div>
 
+        <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+            focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+            text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-6"
+            id="openModalAll" type="button">
+            Change All Cells
+        </button>
         <div id="origami-grid-container" class="mt-4">
             <div id="origami-grid-helper  " class="mr-4">
                 <div class="origami-cell-helper flex justify-center items-center " id="cell-helper-1">
@@ -381,6 +413,71 @@
 
             </div>
         </div>
+
+        <div
+            class="max-w-sm my-4 p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center">
+            <label for="preset-list" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                Choose a pre-set
+            </label>
+            <select id="preset-list"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            </select>
+            <button class="py-2 px-2 bg-blue-500 hover:bg-blue-700 text-white rounded mt-4  flex text-center inline-flex items-center justify-center" id="apply-preset">
+                Apply pre set
+                <svg fill="none" class="w-5 h-5 ml-2 -mr-1" stroke="currentColor" stroke-width="3"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                class="h-32 w-32 [color]-$fill-color"
+                style=" transform: scale(var(--grid-item-icon-scale));">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5">
+                </path>
+            </svg>
+            </button>
+        </div>
+
+        <h2 class="text-4xl font-bold dark:text-white">Download</h2>
+        <div class="flex mt-3 mb-3">
+            <div class="flex flex-col">
+                <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded" id="download-image">
+                    PNG
+                </button>
+                <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mt-4" id="download-pdf">
+                    PDF - BIG
+                </button>
+
+                <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mt-4"
+                    id="download-pdf-medium">
+                    PDF - MEDIUM
+                </button>
+
+                <button class="py-3 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mt-4" id="download-pdf-small">
+                    PDF - SMALL
+                </button>
+            </div>
+        </div>
+
+        <h5 class="text-xl font-bold dark:text-white">Credits </h5>
+        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <li>
+                Made with love by <a target="_blank" href="https://github.com/ArnaldoAF"
+                    class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">ArnaldoAF</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/ArnaldoAF/OrigamiCubeGenerator"
+                    class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://html2canvas.hertzen.com/"
+                    class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">html2canvas</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://parall.ax/products/jspdf"
+                    class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">jspdf</a>
+            </li>
+            <li>
+                sprites by <a target="_blank" href="https://www.spriters-resource.com/"
+                    class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">spriters-resource.com</a>
+            </li>
+        </ul>
 
 
     </div>
