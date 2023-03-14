@@ -198,7 +198,8 @@ export const PDF_OPTIONS_SMALL = {
 
 export const PRESET_LIST_SELECTOR = "#preset-list";
 
-export const BLOCKS_PATH = '../assets/blocks/';
+// this works on github pages
+export const BLOCKS_PATH = './assets/blocks/';
 
 export const BLOCKS = {
     DASHLINE: `${BLOCKS_PATH}dashline.png`,
