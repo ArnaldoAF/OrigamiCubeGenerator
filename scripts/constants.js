@@ -198,6 +198,7 @@ export const PDF_OPTIONS_SMALL = {
 
 export const PRESET_LIST_SELECTOR = "#preset-list";
 
+// this works on github pages
 export const BLOCKS_PATH = './assets/blocks/';
 
 export const BLOCKS = {

@@ -5,8 +5,13 @@ This page will customize a 5x5 grid to print and make a origami cube
 
 Cube origami by Jo Nakashima - https://www.youtube.com/watch?v=0oMf8L9ekys
 
+[Preview](https://arnaldoaf.github.io/OrigamiCubeGenerator/).
 
-To do:
+## Create your own presets
+
+If you want to create your own presets, just look at the `scripts/presetsUtils/` folder and make a Pull Request
+The tutorial will arive soon...
+### To do:
 
 - [X] initial setup
 - [X] create grid
