@@ -17,8 +17,10 @@
 }
 
 .origami-grid-normal > .origami-cell {
-  width: 5rem;
-  height: 5rem;
+  width: 15vw;
+  height: 15vw;
+  max-width: 5rem;
+  max-height: 5rem;
 }
 
 .origami-grid-big > .origami-cell {
@@ -33,7 +35,8 @@
 
 .origami-cell-helper {
   box-sizing: border-box;
-  height: 5rem;
+  height: 15vw;
+  max-height: 5rem;
 }
 
 
