@@ -18,9 +18,6 @@ Made with:
 
 ## Create your own pre-sets
 
-If you want to create your own presets, just look at the `scripts/presetsUtils/` folder and make a Pull Request
-
-The tutorial will arive soon...
 
 To create a pre-set, you will have to:
 
