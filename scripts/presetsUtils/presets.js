@@ -4,6 +4,7 @@ import SMB_empty_block from "./presets/SMB_empty_block.js";
 import SMB_question from "./presets/SMB_question.js";
 import SMB_solid from "./presets/SMB_solid.js";
 import SMB_castle_1 from "./presets/SMB_castle_1.js";
+import SMB_castle_2 from "./presets/SMB_castle_2.js";
 
 const presetList = [
     SMB_ground,
@@ -12,6 +13,7 @@ const presetList = [
     SMB_question,
     SMB_solid,
     SMB_castle_1,
+    SMB_castle_2,
 ];
 
 export default presetList;
