@@ -6,7 +6,7 @@ const SMB_ground = {
     blocks: [
         {
             selector: CELL_SELECTOR.LINE_1,
-            image: BLOCKS.MARIOBLOCK_GROUND,
+            image: BLOCKS.SMB_GROUND,
         },
         {
             selector: CELL_SELECTOR.LINE_2,
@@ -15,7 +15,7 @@ const SMB_ground = {
         },
         {
             selector: CELL_SELECTOR.LINE_3,
-            image: BLOCKS.MARIOBLOCK_GROUND,
+            image: BLOCKS.SMB_GROUND,
         },
         {
             selector: CELL_SELECTOR.LINE_4,
@@ -24,7 +24,7 @@ const SMB_ground = {
         },
         {
             selector: CELL_SELECTOR.LINE_5,
-            image: BLOCKS.MARIOBLOCK_GROUND,
+            image: BLOCKS.SMB_GROUND,
         }
     ]
 }
