@@ -25,6 +25,7 @@ import MtSlg_Z from "./presets/MtSlg_Z.js";
 import SMW_bonus from "./presets/SMW_bonus.js";
 import SMW_clould from "./presets/SMW_clould.js";
 import SMW_exclamation_blue from "./presets/SMW_exclamation_blue.js";
+import SMW_exclamation_green from "./presets/SMW_exclamation_green.js";
 
 const presetList = [
     SMB_ground,
@@ -54,6 +55,7 @@ const presetList = [
     SMW_bonus,
     SMW_clould,
     SMW_exclamation_blue,
+    SMW_exclamation_green,
 ];
 
 export default presetList;
