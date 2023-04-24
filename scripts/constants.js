@@ -208,4 +208,5 @@ export const BLOCKS = {
     SMB_EMPTY: `${BLOCKS_PATH}SMB_empy_block.png`,
     SMB_QUESTION: `${BLOCKS_PATH}SMB_question.png`,
     SMB_SOLID: `${BLOCKS_PATH}SMB_solid.png`,
+    SMB_CASTLE_1: `${BLOCKS_PATH}SMB_castle_block_1.png`,
 }
