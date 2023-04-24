@@ -1,12 +1,12 @@
 import { BLOCKS, CELL_SELECTOR } from '../../constants.js';
 
-const marioBlockBrick = {
-    name: "mario block - brick",
-    code: "marioBlockBrick",
+const SMB_ground = {
+    name: "SMB - ground",
+    code: "SMB_ground",
     blocks: [
         {
             selector: CELL_SELECTOR.LINE_1,
-            image: BLOCKS.MARIOBLOCK_BRICK,
+            image: BLOCKS.MARIOBLOCK_GROUND,
         },
         {
             selector: CELL_SELECTOR.LINE_2,
@@ -15,7 +15,7 @@ const marioBlockBrick = {
         },
         {
             selector: CELL_SELECTOR.LINE_3,
-            image: BLOCKS.MARIOBLOCK_BRICK,
+            image: BLOCKS.MARIOBLOCK_GROUND,
         },
         {
             selector: CELL_SELECTOR.LINE_4,
@@ -24,9 +24,9 @@ const marioBlockBrick = {
         },
         {
             selector: CELL_SELECTOR.LINE_5,
-            image: BLOCKS.MARIOBLOCK_BRICK,
+            image: BLOCKS.MARIOBLOCK_GROUND,
         }
     ]
 }
 
-export default marioBlockBrick;
+export default SMB_ground;

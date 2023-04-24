@@ -1,9 +1,9 @@
-import marioBlockBrick from "./presets/marioBlockBrick.js";
-import marioBlockGround from "./presets/marioBlockGround.js";
+import SMB_ground from "./presets/SMB_ground.js";
+import SMB_brick from "./presets/SMB_brick.js";
 
 const presetList = [
-    marioBlockBrick,
-    marioBlockGround
+    SMB_ground,
+    SMB_brick
 ];
 
 export default presetList;
