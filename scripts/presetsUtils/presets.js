@@ -7,6 +7,7 @@ import SMB_castle_1 from "./presets/SMB_castle_1.js";
 import SMB_castle_2 from "./presets/SMB_castle_2.js";
 import SMB_door from "./presets/SMB_door.js";
 import MB_pow from "./presets/MB_pow.js";
+import MtSlg_2H from "./presets/MtSlg_2H.js";
 
 const presetList = [
     SMB_ground,
@@ -18,6 +19,7 @@ const presetList = [
     SMB_castle_2,
     SMB_door,
     MB_pow,
+    MtSlg_2H,
 ];
 
 export default presetList;
