@@ -223,4 +223,5 @@ export const BLOCKS = {
     MTSLG_H: `${BLOCKS_PATH}MtSlg_H.png`,
     MTSLG_I: `${BLOCKS_PATH}MtSlg_I.png`,
     MTSLG_L: `${BLOCKS_PATH}MtSlg_L.png`,
+    MTSLG_R: `${BLOCKS_PATH}MtSlg_R.png`,
 }
