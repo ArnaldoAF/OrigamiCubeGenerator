@@ -19,6 +19,7 @@ import MtSlg_I from "./presets/MtSlg_I.js";
 import MtSlg_L from "./presets/MtSlg_L.js";
 import MtSlg_R from "./presets/MtSlg_R.js";
 import MtSlg_S from "./presets/MtSlg_S.js";
+import MtSlg_T from "./presets/MtSlg_T.js";
 
 const presetList = [
     SMB_ground,
@@ -29,7 +30,9 @@ const presetList = [
     SMB_castle_1,
     SMB_castle_2,
     SMB_door,
+
     MB_pow,
+    
     MtSlg_2H,
     MtSlg_C,
     MtSlg_D,
@@ -40,6 +43,7 @@ const presetList = [
     MtSlg_L,
     MtSlg_R,
     MtSlg_S,
+    MtSlg_T,
 ];
 
 export default presetList;
