@@ -22,6 +22,8 @@ import MtSlg_S from "./presets/MtSlg_S.js";
 import MtSlg_T from "./presets/MtSlg_T.js";
 import MtSlg_Z from "./presets/MtSlg_Z.js";
 
+import SMW_bonus from "./presets/SMW_bonus.js";
+
 const presetList = [
     SMB_ground,
     SMB_brick,
@@ -46,6 +48,8 @@ const presetList = [
     MtSlg_S,
     MtSlg_T,
     MtSlg_Z,
+    
+    SMW_bonus,
 ];
 
 export default presetList;
