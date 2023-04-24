@@ -203,6 +203,7 @@ export const BLOCKS_PATH = './assets/blocks/';
 
 export const BLOCKS = {
     DASHLINE: `${BLOCKS_PATH}dashline.png`,
+
     SMB_BRICK: `${BLOCKS_PATH}SMB_brick.png`,
     SMB_GROUND: `${BLOCKS_PATH}SMB_ground.png`,
     SMB_EMPTY: `${BLOCKS_PATH}SMB_empy_block.png`,
@@ -211,9 +212,12 @@ export const BLOCKS = {
     SMB_CASTLE_1: `${BLOCKS_PATH}SMB_castle_block_1.png`,
     SMB_CASTLE_2: `${BLOCKS_PATH}SMB_castle_block_2.png`,
     SMB_DOOR: `${BLOCKS_PATH}SMB_door.png`,
+
     MB_POW: `${BLOCKS_PATH}MB_pow.png`,
+
     MTSLG_2H: `${BLOCKS_PATH}MtSlg_2H.png`,
     MTSLG_C: `${BLOCKS_PATH}MtSlg_C.png`,
     MTSLG_D: `${BLOCKS_PATH}MtSlg_D.png`,
     MTSLG_F: `${BLOCKS_PATH}MtSlg_F.png`,
+    MTSLG_G: `${BLOCKS_PATH}MtSlg_G.png`,
 }
