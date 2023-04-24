@@ -230,4 +230,5 @@ export const BLOCKS = {
 
     SMW_BONUS: `${BLOCKS_PATH}SMW_bonus_block.png`,
     SMW_CLOULD: `${BLOCKS_PATH}SMW_clould.png`,
+    SMW_EXCLAMATION_BLUE: `${BLOCKS_PATH}SMW_exclamation_block_blue.png`,
 }
