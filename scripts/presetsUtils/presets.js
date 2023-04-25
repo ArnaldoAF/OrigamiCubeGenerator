@@ -32,6 +32,7 @@ import SMW_exclamation_rainbow from "./presets/SMW_exclamation_rainbow.js";
 import SMW_ground_top from "./presets/SMW_ground_top.js";
 import SMW_ground from "./presets/SMW_ground.js";
 import SMW_ice from "./presets/SMW_ice.js";
+import SMW_message from "./presets/SMW_message.js";
 
 const presetList = [
     SMB_ground,
@@ -68,6 +69,7 @@ const presetList = [
     SMW_ground_top,
     SMW_ground,
     SMW_ice,
+    SMW_message,
 ];
 
 export default presetList;

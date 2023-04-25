@@ -237,4 +237,6 @@ export const BLOCKS = {
     SMW_GROUND_TOP: `${BLOCKS_PATH}SMW_ground_top.png`,
     SMW_GROUND: `${BLOCKS_PATH}SMW_ground.png`,
     SMW_ICE: `${BLOCKS_PATH}SMW_ice_block.png`,
+    SMW_MESSAGE: `${BLOCKS_PATH}SMW_message_block.png`,
+    SMW_MESSAGE_SIDE: `${BLOCKS_PATH}SMW_message_block_side.png`,
 }
