@@ -34,6 +34,7 @@ import SMW_ground from "./presets/SMW_ground.js";
 import SMW_ice from "./presets/SMW_ice.js";
 import SMW_message from "./presets/SMW_message.js";
 import SMW_note from "./presets/SMW_note.js";
+import SMW_question from "./presets/SMW_question.js";
 
 const presetList = [
     SMB_ground,
@@ -72,6 +73,7 @@ const presetList = [
     SMW_ice,
     SMW_message,
     SMW_note,
+    SMW_question,
 ];
 
 export default presetList;
