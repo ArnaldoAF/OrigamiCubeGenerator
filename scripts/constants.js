@@ -234,4 +234,6 @@ export const BLOCKS = {
     SMW_EXCLAMATION_GREEN: `${BLOCKS_PATH}SMW_exclamation_block_green.png`,
     SMW_EXCLAMATION_RED: `${BLOCKS_PATH}SMW_exclamation_block_red.png`,
     SMW_EXCLAMATION_YELLOW: `${BLOCKS_PATH}SMW_exclamation_block_yellow.png`,
+    SMW_GROUND_TOP: `${BLOCKS_PATH}SMW_ground_top.png`,
+    SMW_GROUND: `${BLOCKS_PATH}SMW_ground.png`,
 }
