@@ -27,6 +27,7 @@ import SMW_clould from "./presets/SMW_clould.js";
 import SMW_exclamation_blue from "./presets/SMW_exclamation_blue.js";
 import SMW_exclamation_green from "./presets/SMW_exclamation_green.js";
 import SMW_exclamation_red from "./presets/SMW_exclamation_red.js";
+import SMW_exclamation_yellow from "./presets/SMW_exclamation_yellow.js";
 
 const presetList = [
     SMB_ground,
@@ -58,6 +59,7 @@ const presetList = [
     SMW_exclamation_blue,
     SMW_exclamation_green,
     SMW_exclamation_red,
+    SMW_exclamation_yellow,
 ];
 
 export default presetList;
