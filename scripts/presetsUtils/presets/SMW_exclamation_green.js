@@ -16,6 +16,7 @@ const SMW_exclamation_green = {
         {
             selector: CELL_SELECTOR.LINE_3,
             image: BLOCKS.SMW_EXCLAMATION_GREEN,
+            color: '#00C800'
         },
         {
             selector: CELL_SELECTOR.LINE_4,

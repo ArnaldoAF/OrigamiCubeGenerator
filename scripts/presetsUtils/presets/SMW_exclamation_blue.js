@@ -16,6 +16,7 @@ const SMW_exclamation_blue = {
         {
             selector: CELL_SELECTOR.LINE_3,
             image: BLOCKS.SMW_EXCLAMATION_BLUE,
+            color: '#6868B0'
         },
         {
             selector: CELL_SELECTOR.LINE_4,
