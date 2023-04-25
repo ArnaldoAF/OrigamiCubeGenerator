@@ -1,32 +1,32 @@
 import { BLOCKS, CELL_SELECTOR } from '../../constants.js';
 
-const marioBlockBrick = {
-    name: "mario block - brick",
-    code: "marioBlockBrick",
+const SMW_clould = {
+    name: "SMW - clould block",
+    code: "SMW_clould",
     blocks: [
         {
             selector: CELL_SELECTOR.LINE_1,
-            image: BLOCKS.MARIOBLOCK_BRICK,
+            color: '#FFF'
         },
         {
             selector: CELL_SELECTOR.LINE_2,
             image: BLOCKS.DASHLINE,
-            color: '#9c4a00'
+            color: '#FFF'
         },
         {
             selector: CELL_SELECTOR.LINE_3,
-            image: BLOCKS.MARIOBLOCK_BRICK,
+            image: BLOCKS.SMW_CLOULD,
         },
         {
             selector: CELL_SELECTOR.LINE_4,
             image: BLOCKS.DASHLINE,
-            color: '#9c4a00'
+            color: '#FFF'
         },
         {
             selector: CELL_SELECTOR.LINE_5,
-            image: BLOCKS.MARIOBLOCK_BRICK,
+            color: '#FFF'
         }
     ]
 }
 
-export default marioBlockBrick;
+export default SMW_clould;

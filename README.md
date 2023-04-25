@@ -146,3 +146,6 @@ And done!
 Create a Pull Request with those changes and **Done!**
 
 
+## Change log 
+
+- 2023/04/24 - add 43 new pre sets!
