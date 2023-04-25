@@ -41,6 +41,7 @@ import SMW_rotating_green from "./presets/SMW_rotating_green.js";
 import SMW_rotating_red from "./presets/SMW_rotating_red.js";
 import SMW_rotating_yellow from "./presets/SMW_rotating_yellow.js";
 import SMW_rotating_rainbow from "./presets/SMW_rotating_rainbow.js";
+import SMW_stone from "./presets/SMW_stone.js";
 
 const presetList = [
     SMB_ground,
@@ -86,6 +87,7 @@ const presetList = [
     SMW_rotating_red,
     SMW_rotating_yellow,
     SMW_rotating_rainbow,
+    SMW_stone
 ];
 
 export default presetList;
