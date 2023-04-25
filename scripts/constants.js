@@ -242,4 +242,5 @@ export const BLOCKS = {
     SMW_NOTE: `${BLOCKS_PATH}SMW_note_block.png`,
     SMW_NOTE_SIDE: `${BLOCKS_PATH}SMW_note_block_side.png`,
     SMW_QUESTION: `${BLOCKS_PATH}SMW_question_block.png`,
+    SMW_QUESTION_RED: `${BLOCKS_PATH}SMW_question_block_red.png`,
 }
