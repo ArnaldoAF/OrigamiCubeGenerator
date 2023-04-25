@@ -250,4 +250,5 @@ export const BLOCKS = {
     SMW_STONE: `${BLOCKS_PATH}SMW_stone_block.png`,
     SMW_SWITCH_OFF: `${BLOCKS_PATH}SMW_switch_block_OFF.png`,
     SMW_SWITCH_ON: `${BLOCKS_PATH}SMW_switch_block_ON.png`,
+    SMW_USED: `${BLOCKS_PATH}SMW_used_block.png`,
 }

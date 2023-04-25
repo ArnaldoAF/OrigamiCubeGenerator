@@ -45,6 +45,7 @@ import SMW_stone from "./presets/SMW_stone.js";
 import SMW_switch_off from "./presets/SMW_switch_off.js";
 import SMW_switch_on from "./presets/SMW_switch_on.js";
 import SMW_switch_rainbow from "./presets/SMW_switch_rainbow.js";
+import SMW_used from "./presets/SMW_used.js";
 
 const presetList = [
     SMB_ground,
@@ -94,6 +95,7 @@ const presetList = [
     SMW_switch_off,
     SMW_switch_on,
     SMW_switch_rainbow,
+    SMW_used
 ];
 
 export default presetList;
