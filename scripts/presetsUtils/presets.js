@@ -39,6 +39,7 @@ import SMW_question_red from "./presets/SMW_question_red.js";
 import SMW_rotating_blue from "./presets/SMW_rotating_blue.js";
 import SMW_rotating_green from "./presets/SMW_rotating_green.js";
 import SMW_rotating_red from "./presets/SMW_rotating_red.js";
+import SMW_rotating_yellow from "./presets/SMW_rotating_yellow.js";
 
 const presetList = [
     SMB_ground,
@@ -82,6 +83,7 @@ const presetList = [
     SMW_rotating_blue,
     SMW_rotating_green,
     SMW_rotating_red,
+    SMW_rotating_yellow,
 ];
 
 export default presetList;
