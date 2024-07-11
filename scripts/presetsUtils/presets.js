@@ -53,6 +53,15 @@ import MINE_bee_nest from "./presets/MINE_bee_nest.js";
 import MINE_bow_table from "./presets/MINE_bow_table.js";
 import MINE_bronze from "./presets/MINE_bronze.js";
 import MINE_craft_table from "./presets/MINE_craft_table.js";
+import MINE_furnace_on from "./presets/MINE_furnace_on.js";
+import MINE_furnace_off from "./presets/MINE_furnace_off.js";
+import MINE_gold_block from "./presets/MINE_gold_block.js";
+import MINE_gold_ore from "./presets/MINE_gold_ore.js";
+import MINE_grass from "./presets/MINE_grass.js";
+import MINE_iron_ore from "./presets/MINE_iron_ore.js";
+import MINE_oak_log from "./presets/MINE_oak_log.js";
+import MINE_redstone_ore from "./presets/MINE_redstone_ore.js";
+import MINE_tnt from "./presets/MINE_tnt.js";
 
 const presetList = [
   MINE_bamboo,
@@ -61,6 +70,15 @@ const presetList = [
   MINE_bow_table,
   MINE_bronze,
   MINE_craft_table,
+  MINE_furnace_on,
+  MINE_furnace_off,
+  MINE_gold_block,
+  MINE_gold_ore,
+  MINE_iron_ore,
+  MINE_redstone_ore,
+  MINE_grass,
+  MINE_oak_log,
+  MINE_tnt,
 
   SMB_ground,
   SMB_brick,
