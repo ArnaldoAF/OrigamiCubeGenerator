@@ -149,3 +149,4 @@ Create a Pull Request with those changes and **Done!**
 ## Change log 
 
 - 2023/04/24 - add 43 new pre sets!
+- 2024/07/15 - add Minecraft blocks | seperated pre assets in folder
