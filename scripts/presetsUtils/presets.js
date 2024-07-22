@@ -100,7 +100,7 @@ import SM64_font_X from "./presets/super_mario64_font/SM64_font_X.js";
 import SM64_font_Y from "./presets/super_mario64_font/SM64_font_Y.js";
 import SM64_font_Z from "./presets/super_mario64_font/SM64_font_Z.js";
 
-const presetList = [
+const Minecraft_Blocks = [
   MINE_bamboo,
   MINE_beehive,
   MINE_bee_nest,
@@ -116,7 +116,9 @@ const presetList = [
   MINE_grass,
   MINE_oak_log,
   MINE_tnt,
+];
 
+const SuperMarioBros_Blocks = [
   SMB_ground,
   SMB_brick,
   SMB_empty_block,
@@ -125,9 +127,11 @@ const presetList = [
   SMB_castle_1,
   SMB_castle_2,
   SMB_door,
+];
 
-  MB_pow,
+const MarioBros_Blocks = [MB_pow];
 
+const MetalSlug_Blocks = [
   MtSlg_2H,
   MtSlg_C,
   MtSlg_D,
@@ -140,7 +144,9 @@ const presetList = [
   MtSlg_S,
   MtSlg_T,
   MtSlg_Z,
+];
 
+const SuperMarioWorld_Blocks = [
   SMW_bonus,
   SMW_clould,
   SMW_exclamation_blue,
@@ -165,7 +171,9 @@ const presetList = [
   SMW_switch_on,
   SMW_switch_rainbow,
   SMW_used,
+];
 
+const SuperMario64Font_Blocks = [
   SM64_font_0,
   SM64_font_1,
   SM64_font_2,
@@ -202,6 +210,18 @@ const presetList = [
   SM64_font_X,
   SM64_font_Y,
   SM64_font_Z,
+];
+
+const Others_Blocks = [];
+
+const presetList = [
+  ...Minecraft_Blocks,
+  ...SuperMarioBros_Blocks,
+  ...MarioBros_Blocks,
+  ...MetalSlug_Blocks,
+  ...SuperMarioWorld_Blocks,
+  ...SuperMario64Font_Blocks,
+  ...Others_Blocks,
 ];
 
 export default presetList;
