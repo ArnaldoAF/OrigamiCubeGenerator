@@ -11,6 +11,8 @@ Cube origami by Jo Nakashima - https://www.youtube.com/watch?v=0oMf8L9ekys
 
 Made with:
 
+- HTML
+- Javascript
 - [Tailwind css](https://tailwindcss.com/)
 - [Flowbite](https://flowbite.com/)
 - [Html2Canvas](https://html2canvas.hertzen.com/) (to convert the HTML content to an image)
@@ -21,7 +23,7 @@ Made with:
 
 To create a pre-set, you will have to:
 
-- create a preset file on the `scripts/presetsUtils/presets/` folder
+- create a preset file on the `scripts/presetsUtils/presets/` folder (You can put there directly or create a sub folder)
 - import the pre-set and add to the `scripts/presetsUtils/presets.js` file
 
 ### 1. Create a preset file:
@@ -96,7 +98,7 @@ Block Object definition:
 
 If you want to add an image to you preset that is not include on the project, do the folowing:
 
-- add the image in the `assets/blocks/` folder
+- add the image in the `assets/blocks/` folder (put there directly or create a sub-folder)
 - create a path to the image in the `scripts/constants.js` file, on the `BLOCKS` variable:
 
 `scripts/constants.js` :
@@ -143,10 +145,87 @@ export default presetList;
 
 And done!
 
+### Aditional: Creating Fonts
+
+To create Alphabet blocks, there's a helper to assist on that
+
+#### 1. Added your assets on a folder
+
+Create images with the same prefix and put them on a seperate folder inside the `assets/blocks/` (yes, its a very manual and boring work). Like this:
+
+```
+assets/
+├─ blocks/
+│  ├─ [...]
+│  ├─ super_mario64_font/
+│  │  ├─ SM64_font_0.png
+│  │  ├─ SM64_font_1.png
+│  |  ├─ [... other files]
+
+```
+
+#### 2. Use the `fontGenerator.js`
+
+The `scripts/presetsUtils/fontGenerator.js` file it's gonna help to create the other things
+
+You need to modify it on the following parts:
+
+```js
+[...]
+
+const fs = require("fs");
+const path = require("path");
+
+const fontFolder = "super_mario64_font"; // <-- Modify the folder's name
+
+const root = process.cwd();
+const fontPath = path.join(
+  root,
+  "scripts",
+  "presetsUtils",
+  "presets",
+  fontFolder
+);
+
+console.log(root);
+
+// MODIFY THE 3 VARIABLES BELLOW:
+
+const fontPrefix = "SM64_font"; // Object's Name
+const fontPrefixConst = "SM64_FONT"; // variable's name from the constants.js file | its the same prefix as the images
+const fontPrefixName = "SM64 Font"; // Name that will appear on the UI(the select on the HTML) | Use a User friendy name
+
+[...]
+```
+
+#### 3. Execute the file
+
+Using a node terminal or anything similar, execute the script:
+
+```
+node scripts\presetsUtils\fontGenerator.js
+```
+
+The script will do the following:
+
+- Create a folder for your font on the `scripts/presetsUtils/presets/`
+- Log on the console:
+    - Constants declarations with the image path for the `constants.js` file
+    - Imports to the `presets.js` file
+    - List of the presets to the `presets.js` file
+- Create all the pre-sets files for each letter/Number and put them on the folder created earlier
+
+
 Create a Pull Request with those changes and **Done!**
 
 
 ## Change log 
 
-- 2023/04/24 - add 43 new pre sets!
-- 2024/07/15 - add Minecraft blocks | organized pre sets and assests in folders
+- 2023/04/24 
+    - add 43 new pre sets
+- 2024/07/15 
+    - add Minecraft blocks
+    - organized pre sets and assests in folders
+- 2024/07/29
+    - SuperMario 64 font pre-sets added
+    - fontGenerator helper added - a script that help create block for letters and numbers

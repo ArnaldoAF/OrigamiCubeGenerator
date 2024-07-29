@@ -63,7 +63,44 @@ import MINE_oak_log from "./presets/minecraft/MINE_oak_log.js";
 import MINE_redstone_ore from "./presets/minecraft/MINE_redstone_ore.js";
 import MINE_tnt from "./presets/minecraft/MINE_tnt.js";
 
-const presetList = [
+import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
+import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
+import SM64_font_2 from "./presets/super_mario64_font/SM64_font_2.js";
+import SM64_font_3 from "./presets/super_mario64_font/SM64_font_3.js";
+import SM64_font_4 from "./presets/super_mario64_font/SM64_font_4.js";
+import SM64_font_5 from "./presets/super_mario64_font/SM64_font_5.js";
+import SM64_font_6 from "./presets/super_mario64_font/SM64_font_6.js";
+import SM64_font_7 from "./presets/super_mario64_font/SM64_font_7.js";
+import SM64_font_8 from "./presets/super_mario64_font/SM64_font_8.js";
+import SM64_font_9 from "./presets/super_mario64_font/SM64_font_9.js";
+import SM64_font_A from "./presets/super_mario64_font/SM64_font_A.js";
+import SM64_font_B from "./presets/super_mario64_font/SM64_font_B.js";
+import SM64_font_C from "./presets/super_mario64_font/SM64_font_C.js";
+import SM64_font_D from "./presets/super_mario64_font/SM64_font_D.js";
+import SM64_font_E from "./presets/super_mario64_font/SM64_font_E.js";
+import SM64_font_F from "./presets/super_mario64_font/SM64_font_F.js";
+import SM64_font_G from "./presets/super_mario64_font/SM64_font_G.js";
+import SM64_font_H from "./presets/super_mario64_font/SM64_font_H.js";
+import SM64_font_I from "./presets/super_mario64_font/SM64_font_I.js";
+import SM64_font_J from "./presets/super_mario64_font/SM64_font_J.js";
+import SM64_font_K from "./presets/super_mario64_font/SM64_font_K.js";
+import SM64_font_L from "./presets/super_mario64_font/SM64_font_L.js";
+import SM64_font_M from "./presets/super_mario64_font/SM64_font_M.js";
+import SM64_font_N from "./presets/super_mario64_font/SM64_font_N.js";
+import SM64_font_O from "./presets/super_mario64_font/SM64_font_O.js";
+import SM64_font_P from "./presets/super_mario64_font/SM64_font_P.js";
+import SM64_font_Q from "./presets/super_mario64_font/SM64_font_Q.js";
+import SM64_font_R from "./presets/super_mario64_font/SM64_font_R.js";
+import SM64_font_S from "./presets/super_mario64_font/SM64_font_S.js";
+import SM64_font_T from "./presets/super_mario64_font/SM64_font_T.js";
+import SM64_font_U from "./presets/super_mario64_font/SM64_font_U.js";
+import SM64_font_V from "./presets/super_mario64_font/SM64_font_V.js";
+import SM64_font_W from "./presets/super_mario64_font/SM64_font_W.js";
+import SM64_font_X from "./presets/super_mario64_font/SM64_font_X.js";
+import SM64_font_Y from "./presets/super_mario64_font/SM64_font_Y.js";
+import SM64_font_Z from "./presets/super_mario64_font/SM64_font_Z.js";
+
+const Minecraft_Blocks = [
   MINE_bamboo,
   MINE_beehive,
   MINE_bee_nest,
@@ -79,7 +116,9 @@ const presetList = [
   MINE_grass,
   MINE_oak_log,
   MINE_tnt,
+];
 
+const SuperMarioBros_Blocks = [
   SMB_ground,
   SMB_brick,
   SMB_empty_block,
@@ -88,9 +127,11 @@ const presetList = [
   SMB_castle_1,
   SMB_castle_2,
   SMB_door,
+];
 
-  MB_pow,
+const MarioBros_Blocks = [MB_pow];
 
+const MetalSlug_Blocks = [
   MtSlg_2H,
   MtSlg_C,
   MtSlg_D,
@@ -103,7 +144,9 @@ const presetList = [
   MtSlg_S,
   MtSlg_T,
   MtSlg_Z,
+];
 
+const SuperMarioWorld_Blocks = [
   SMW_bonus,
   SMW_clould,
   SMW_exclamation_blue,
@@ -128,6 +171,57 @@ const presetList = [
   SMW_switch_on,
   SMW_switch_rainbow,
   SMW_used,
+];
+
+const SuperMario64Font_Blocks = [
+  SM64_font_0,
+  SM64_font_1,
+  SM64_font_2,
+  SM64_font_3,
+  SM64_font_4,
+  SM64_font_5,
+  SM64_font_6,
+  SM64_font_7,
+  SM64_font_8,
+  SM64_font_9,
+  SM64_font_A,
+  SM64_font_B,
+  SM64_font_C,
+  SM64_font_D,
+  SM64_font_E,
+  SM64_font_F,
+  SM64_font_G,
+  SM64_font_H,
+  SM64_font_I,
+  SM64_font_J,
+  SM64_font_K,
+  SM64_font_L,
+  SM64_font_M,
+  SM64_font_N,
+  SM64_font_O,
+  SM64_font_P,
+  SM64_font_Q,
+  SM64_font_R,
+  SM64_font_S,
+  SM64_font_T,
+  SM64_font_U,
+  SM64_font_V,
+  SM64_font_W,
+  SM64_font_X,
+  SM64_font_Y,
+  SM64_font_Z,
+];
+
+const Others_Blocks = [];
+
+const presetList = [
+  ...Minecraft_Blocks,
+  ...SuperMarioBros_Blocks,
+  ...MarioBros_Blocks,
+  ...MetalSlug_Blocks,
+  ...SuperMarioWorld_Blocks,
+  ...SuperMario64Font_Blocks,
+  ...Others_Blocks,
 ];
 
 export default presetList;
