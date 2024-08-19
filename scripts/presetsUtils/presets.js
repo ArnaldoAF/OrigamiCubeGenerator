@@ -70,6 +70,8 @@ import MINE_diamond_ore from "./presets/minecraft/MINE_diamond_ore.js";
 import MINE_emerald_ore from "./presets/minecraft/MINE_emerald_ore.js";
 import MINE_lapis_ore from "./presets/minecraft/MINE_lapis_ore.js";
 import MINE_tnt from "./presets/minecraft/MINE_tnt.js";
+import MINE_barrel from "./presets/minecraft/MINE_barrel.js";
+import MINE_barrel_open from "./presets/minecraft/MINE_barrel_open.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -132,6 +134,8 @@ const Minecraft_Blocks = [
   MINE_birch_log,
   MINE_cherry_log,
   MINE_tnt,
+  MINE_barrel,
+  MINE_barrel_open,
 ];
 
 const SuperMarioBros_Blocks = [
