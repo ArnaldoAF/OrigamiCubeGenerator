@@ -72,6 +72,8 @@ import MINE_lapis_ore from "./presets/minecraft/MINE_lapis_ore.js";
 import MINE_tnt from "./presets/minecraft/MINE_tnt.js";
 import MINE_barrel from "./presets/minecraft/MINE_barrel.js";
 import MINE_barrel_open from "./presets/minecraft/MINE_barrel_open.js";
+import MINE_cobblestone from "./presets/minecraft/MINE_cobblestone.js";
+import MINE_cobblestone_mossy from "./presets/minecraft/MINE_cobblestone_mossy.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -127,6 +129,8 @@ const Minecraft_Blocks = [
   MINE_diamond_ore,
   MINE_emerald_ore,
   MINE_lapis_ore,
+  MINE_cobblestone,
+  MINE_cobblestone_mossy,
   MINE_grass,
   MINE_oak_log,
   MINE_dark_oak_log,
