@@ -65,6 +65,10 @@ import MINE_acacia_log from "./presets/minecraft/MINE_acacia_log.js";
 import MINE_birch_log from "./presets/minecraft/MINE_birch_log.js";
 import MINE_cherry_log from "./presets/minecraft/MINE_cherry_log.js";
 import MINE_redstone_ore from "./presets/minecraft/MINE_redstone_ore.js";
+import MINE_coal_ore from "./presets/minecraft/MINE_coal_ore.js";
+import MINE_diamond_ore from "./presets/minecraft/MINE_diamond_ore.js";
+import MINE_emerald_ore from "./presets/minecraft/MINE_emerald_ore.js";
+import MINE_lapis_ore from "./presets/minecraft/MINE_lapis_ore.js";
 import MINE_tnt from "./presets/minecraft/MINE_tnt.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
@@ -117,6 +121,10 @@ const Minecraft_Blocks = [
   MINE_gold_ore,
   MINE_iron_ore,
   MINE_redstone_ore,
+  MINE_coal_ore,
+  MINE_diamond_ore,
+  MINE_emerald_ore,
+  MINE_lapis_ore,
   MINE_grass,
   MINE_oak_log,
   MINE_dark_oak_log,
