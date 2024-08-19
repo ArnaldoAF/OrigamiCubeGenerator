@@ -62,6 +62,7 @@ import MINE_iron_ore from "./presets/minecraft/MINE_iron_ore.js";
 import MINE_oak_log from "./presets/minecraft/MINE_oak_log.js";
 import MINE_dark_oak_log from "./presets/minecraft/MINE_dark_oak_log.js";
 import MINE_acacia_log from "./presets/minecraft/MINE_acacia_log.js";
+import MINE_birch_log from "./presets/minecraft/MINE_birch_log.js";
 import MINE_redstone_ore from "./presets/minecraft/MINE_redstone_ore.js";
 import MINE_tnt from "./presets/minecraft/MINE_tnt.js";
 
@@ -119,6 +120,7 @@ const Minecraft_Blocks = [
   MINE_oak_log,
   MINE_dark_oak_log,
   MINE_acacia_log,
+  MINE_birch_log,
   MINE_tnt,
 ];
 
