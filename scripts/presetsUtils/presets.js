@@ -60,6 +60,7 @@ import MINE_gold_ore from "./presets/minecraft/MINE_gold_ore.js";
 import MINE_grass from "./presets/minecraft/MINE_grass.js";
 import MINE_iron_ore from "./presets/minecraft/MINE_iron_ore.js";
 import MINE_oak_log from "./presets/minecraft/MINE_oak_log.js";
+import MINE_acacia_log from "./presets/minecraft/MINE_acacia_log.js";
 import MINE_redstone_ore from "./presets/minecraft/MINE_redstone_ore.js";
 import MINE_tnt from "./presets/minecraft/MINE_tnt.js";
 
@@ -115,6 +116,7 @@ const Minecraft_Blocks = [
   MINE_redstone_ore,
   MINE_grass,
   MINE_oak_log,
+  MINE_acacia_log,
   MINE_tnt,
 ];
 
