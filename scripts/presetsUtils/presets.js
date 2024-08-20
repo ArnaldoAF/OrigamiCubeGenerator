@@ -74,6 +74,9 @@ import MINE_barrel from "./presets/minecraft/MINE_barrel.js";
 import MINE_barrel_open from "./presets/minecraft/MINE_barrel_open.js";
 import MINE_cobblestone from "./presets/minecraft/MINE_cobblestone.js";
 import MINE_cobblestone_mossy from "./presets/minecraft/MINE_cobblestone_mossy.js";
+import MINE_stonebrick from "./presets/minecraft/MINE_stonebrick.js";
+import MINE_stonebrick_mossy from "./presets/minecraft/MINE_stonebrick_mossy.js";
+import MINE_stonebrick_cracked from "./presets/minecraft/MINE_stonebrick_cracked.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -140,6 +143,9 @@ const Minecraft_Blocks = [
   MINE_tnt,
   MINE_barrel,
   MINE_barrel_open,
+  MINE_stonebrick,
+  MINE_stonebrick_mossy,
+  MINE_stonebrick_cracked,
 ];
 
 const SuperMarioBros_Blocks = [
