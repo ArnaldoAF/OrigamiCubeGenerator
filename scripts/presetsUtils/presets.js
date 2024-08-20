@@ -80,6 +80,7 @@ import MINE_stonebrick_cracked from "./presets/minecraft/MINE_stonebrick_cracked
 import MINE_end_stone from "./presets/minecraft/MINE_end_stone.js";
 import MINE_end_stone_bricks from "./presets/minecraft/MINE_end_stone_bricks.js";
 import MINE_hay_block from "./presets/minecraft/MINE_hay_block.js";
+import MINE_iron_block from "./presets/minecraft/MINE_iron_block.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -152,6 +153,7 @@ const Minecraft_Blocks = [
   MINE_end_stone,
   MINE_end_stone_bricks,
   MINE_hay_block,
+  MINE_iron_block,
 ];
 
 const SuperMarioBros_Blocks = [
