@@ -77,6 +77,8 @@ import MINE_cobblestone_mossy from "./presets/minecraft/MINE_cobblestone_mossy.j
 import MINE_stonebrick from "./presets/minecraft/MINE_stonebrick.js";
 import MINE_stonebrick_mossy from "./presets/minecraft/MINE_stonebrick_mossy.js";
 import MINE_stonebrick_cracked from "./presets/minecraft/MINE_stonebrick_cracked.js";
+import MINE_end_stone from "./presets/minecraft/MINE_end_stone.js";
+import MINE_end_stone_bricks from "./presets/minecraft/MINE_end_stone_bricks.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -146,6 +148,8 @@ const Minecraft_Blocks = [
   MINE_stonebrick,
   MINE_stonebrick_mossy,
   MINE_stonebrick_cracked,
+  MINE_end_stone,
+  MINE_end_stone_bricks,
 ];
 
 const SuperMarioBros_Blocks = [
