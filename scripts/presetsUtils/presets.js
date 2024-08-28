@@ -85,6 +85,7 @@ import MINE_iron_block from "./presets/minecraft/MINE_iron_block.js";
 import MINE_melon from "./presets/minecraft/MINE_melon.js";
 import MINE_pumpkin from "./presets/minecraft/MINE_pumpkin.js";
 import MINE_lapis_block from "./presets/minecraft/MINE_lapis_block.js";
+import MINE_oak_planks from "./presets/minecraft/MINE_oak_planks.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -162,6 +163,7 @@ const Minecraft_Blocks = [
   MINE_iron_block,
   MINE_melon,
   MINE_pumpkin,
+  MINE_oak_planks,
 ];
 
 const SuperMarioBros_Blocks = [
