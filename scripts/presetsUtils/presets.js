@@ -56,12 +56,37 @@ import MINE_craft_table from "./presets/minecraft/MINE_craft_table.js";
 import MINE_furnace_on from "./presets/minecraft/MINE_furnace_on.js";
 import MINE_furnace_off from "./presets/minecraft/MINE_furnace_off.js";
 import MINE_gold_block from "./presets/minecraft/MINE_gold_block.js";
+import MINE_emerald_block from "./presets/minecraft/MINE_emerald_block.js";
 import MINE_gold_ore from "./presets/minecraft/MINE_gold_ore.js";
 import MINE_grass from "./presets/minecraft/MINE_grass.js";
 import MINE_iron_ore from "./presets/minecraft/MINE_iron_ore.js";
 import MINE_oak_log from "./presets/minecraft/MINE_oak_log.js";
+import MINE_dark_oak_log from "./presets/minecraft/MINE_dark_oak_log.js";
+import MINE_acacia_log from "./presets/minecraft/MINE_acacia_log.js";
+import MINE_birch_log from "./presets/minecraft/MINE_birch_log.js";
+import MINE_cherry_log from "./presets/minecraft/MINE_cherry_log.js";
 import MINE_redstone_ore from "./presets/minecraft/MINE_redstone_ore.js";
+import MINE_coal_ore from "./presets/minecraft/MINE_coal_ore.js";
+import MINE_diamond_ore from "./presets/minecraft/MINE_diamond_ore.js";
+import MINE_emerald_ore from "./presets/minecraft/MINE_emerald_ore.js";
+import MINE_lapis_ore from "./presets/minecraft/MINE_lapis_ore.js";
 import MINE_tnt from "./presets/minecraft/MINE_tnt.js";
+import MINE_barrel from "./presets/minecraft/MINE_barrel.js";
+import MINE_barrel_open from "./presets/minecraft/MINE_barrel_open.js";
+import MINE_cobblestone from "./presets/minecraft/MINE_cobblestone.js";
+import MINE_cobblestone_mossy from "./presets/minecraft/MINE_cobblestone_mossy.js";
+import MINE_stonebrick from "./presets/minecraft/MINE_stonebrick.js";
+import MINE_stonebrick_mossy from "./presets/minecraft/MINE_stonebrick_mossy.js";
+import MINE_stonebrick_cracked from "./presets/minecraft/MINE_stonebrick_cracked.js";
+import MINE_end_stone from "./presets/minecraft/MINE_end_stone.js";
+import MINE_end_stone_bricks from "./presets/minecraft/MINE_end_stone_bricks.js";
+import MINE_hay_block from "./presets/minecraft/MINE_hay_block.js";
+import MINE_iron_block from "./presets/minecraft/MINE_iron_block.js";
+import MINE_melon from "./presets/minecraft/MINE_melon.js";
+import MINE_pumpkin from "./presets/minecraft/MINE_pumpkin.js";
+import MINE_lapis_block from "./presets/minecraft/MINE_lapis_block.js";
+import MINE_oak_planks from "./presets/minecraft/MINE_oak_planks.js";
+import MINE_acacia_planks from "./presets/minecraft/MINE_acacia_planks.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -100,6 +125,11 @@ import SM64_font_X from "./presets/super_mario64_font/SM64_font_X.js";
 import SM64_font_Y from "./presets/super_mario64_font/SM64_font_Y.js";
 import SM64_font_Z from "./presets/super_mario64_font/SM64_font_Z.js";
 
+import MINE_bamboo_planks from "./presets/minecraft/MINE_bamboo_planks.js";
+import MINE_birch_planks from "./presets/minecraft/MINE_birch_planks.js";
+import MINE_dark_oak_planks from "./presets/minecraft/MINE_dark_oak_planks.js";
+import MINE_jungle_planks from "./presets/minecraft/MINE_jungle_planks.js";
+
 const Minecraft_Blocks = [
   MINE_bamboo,
   MINE_beehive,
@@ -110,12 +140,41 @@ const Minecraft_Blocks = [
   MINE_furnace_on,
   MINE_furnace_off,
   MINE_gold_block,
+  MINE_emerald_block,
+  MINE_lapis_block,
   MINE_gold_ore,
   MINE_iron_ore,
   MINE_redstone_ore,
+  MINE_coal_ore,
+  MINE_diamond_ore,
+  MINE_emerald_ore,
+  MINE_lapis_ore,
+  MINE_cobblestone,
+  MINE_cobblestone_mossy,
   MINE_grass,
   MINE_oak_log,
+  MINE_dark_oak_log,
+  MINE_acacia_log,
+  MINE_birch_log,
+  MINE_cherry_log,
   MINE_tnt,
+  MINE_barrel,
+  MINE_barrel_open,
+  MINE_stonebrick,
+  MINE_stonebrick_mossy,
+  MINE_stonebrick_cracked,
+  MINE_end_stone,
+  MINE_end_stone_bricks,
+  MINE_hay_block,
+  MINE_iron_block,
+  MINE_melon,
+  MINE_pumpkin,
+  MINE_oak_planks,
+  MINE_acacia_planks,
+  MINE_bamboo_planks,
+  MINE_birch_planks,
+  MINE_dark_oak_planks,
+  MINE_jungle_planks,
 ];
 
 const SuperMarioBros_Blocks = [

@@ -229,3 +229,14 @@ Create a Pull Request with those changes and **Done!**
 - 2024/07/29
     - SuperMario 64 font pre-sets added
     - fontGenerator helper added - a script that help create block for letters and numbers
+- 2024/08/28
+  - more minecraft blocks:
+    - logs
+    - planks
+    - ores
+    - melon & pumpkin
+    - hay block
+    - end stone
+    - cobblestones
+    - barrel
+    - iron, emerald, lapis blocks
