@@ -86,6 +86,7 @@ import MINE_melon from "./presets/minecraft/MINE_melon.js";
 import MINE_pumpkin from "./presets/minecraft/MINE_pumpkin.js";
 import MINE_lapis_block from "./presets/minecraft/MINE_lapis_block.js";
 import MINE_oak_planks from "./presets/minecraft/MINE_oak_planks.js";
+import MINE_acacia_planks from "./presets/minecraft/MINE_acacia_planks.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -123,6 +124,11 @@ import SM64_font_W from "./presets/super_mario64_font/SM64_font_W.js";
 import SM64_font_X from "./presets/super_mario64_font/SM64_font_X.js";
 import SM64_font_Y from "./presets/super_mario64_font/SM64_font_Y.js";
 import SM64_font_Z from "./presets/super_mario64_font/SM64_font_Z.js";
+
+import MINE_bamboo_planks from "./presets/minecraft/MINE_bamboo_planks.js";
+import MINE_birch_planks from "./presets/minecraft/MINE_birch_planks.js";
+import MINE_dark_oak_planks from "./presets/minecraft/MINE_dark_oak_planks.js";
+import MINE_jungle_planks from "./presets/minecraft/MINE_jungle_planks.js";
 
 const Minecraft_Blocks = [
   MINE_bamboo,
@@ -164,6 +170,11 @@ const Minecraft_Blocks = [
   MINE_melon,
   MINE_pumpkin,
   MINE_oak_planks,
+  MINE_acacia_planks,
+  MINE_bamboo_planks,
+  MINE_birch_planks,
+  MINE_dark_oak_planks,
+  MINE_jungle_planks,
 ];
 
 const SuperMarioBros_Blocks = [
