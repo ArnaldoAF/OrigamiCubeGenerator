@@ -84,6 +84,7 @@ import MINE_hay_block from "./presets/minecraft/MINE_hay_block.js";
 import MINE_iron_block from "./presets/minecraft/MINE_iron_block.js";
 import MINE_melon from "./presets/minecraft/MINE_melon.js";
 import MINE_pumpkin from "./presets/minecraft/MINE_pumpkin.js";
+import MINE_lapis_block from "./presets/minecraft/MINE_lapis_block.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -133,6 +134,7 @@ const Minecraft_Blocks = [
   MINE_furnace_off,
   MINE_gold_block,
   MINE_emerald_block,
+  MINE_lapis_block,
   MINE_gold_ore,
   MINE_iron_ore,
   MINE_redstone_ore,
