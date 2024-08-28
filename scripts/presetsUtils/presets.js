@@ -56,6 +56,7 @@ import MINE_craft_table from "./presets/minecraft/MINE_craft_table.js";
 import MINE_furnace_on from "./presets/minecraft/MINE_furnace_on.js";
 import MINE_furnace_off from "./presets/minecraft/MINE_furnace_off.js";
 import MINE_gold_block from "./presets/minecraft/MINE_gold_block.js";
+import MINE_emerald_block from "./presets/minecraft/MINE_emerald_block.js";
 import MINE_gold_ore from "./presets/minecraft/MINE_gold_ore.js";
 import MINE_grass from "./presets/minecraft/MINE_grass.js";
 import MINE_iron_ore from "./presets/minecraft/MINE_iron_ore.js";
@@ -131,6 +132,7 @@ const Minecraft_Blocks = [
   MINE_furnace_on,
   MINE_furnace_off,
   MINE_gold_block,
+  MINE_emerald_block,
   MINE_gold_ore,
   MINE_iron_ore,
   MINE_redstone_ore,
