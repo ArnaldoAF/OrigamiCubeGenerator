@@ -202,6 +202,8 @@ export const SMB_BLOCKS_PATH = "super_mario_bros";
 export const MT_SLG_BLOCKS_PATH = "metal_slug";
 export const SMW_BLOCKS_PATH = "super_mario_world";
 export const MINE_BLOCKS_PATH = "minecraft";
+export const DEV_BLOCKS_PATH = "dev";
+
 export const SM64_FONT_BLOCKS_PATH = "super_mario64_font";
 
 export const BLOCKS = {
@@ -254,14 +256,6 @@ export const BLOCKS = {
   SMW_SWITCH_OFF: `${BLOCKS_PATH}/${SMW_BLOCKS_PATH}/SMW_switch_block_OFF.png`,
   SMW_SWITCH_ON: `${BLOCKS_PATH}/${SMW_BLOCKS_PATH}/SMW_switch_block_ON.png`,
   SMW_USED: `${BLOCKS_PATH}/${SMW_BLOCKS_PATH}/SMW_used_block.png`,
-
-  //   MINE_BAMBOO_TOP: `${BLOCKS_PATH}/MINE_bamboo_block_top.png`,
-  //   MINE_BAMBOO: `${BLOCKS_PATH}/MINE_bamboo_block.png`,
-  //   MINE_BEE_NEST_BOTTOM: `${BLOCKS_PATH}/MINE_bee_nest_bottom.png`,
-  //   MINE_BEE_NEST_FRONT_HONEY: `${BLOCKS_PATH}/MINE_bee_nest_front_honey.png`,
-  //   MINE_BEE_NEST_FRONT: `${BLOCKS_PATH}/MINE_bee_nest_front.png`,
-  //   MINE_BEE_NEST_SIDE: `${BLOCKS_PATH}/MINE_bee_nest.png`,
-  //   MINE_BEE_NEST_TOP: `${BLOCKS_PATH}/MINE_bee_nest.png`,
 
   MINE_BAMBOO_BLOCK: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_bamboo_block.png`,
   MINE_BAMBOO_BLOCK_TOP: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_bamboo_block_top.png`,
@@ -334,6 +328,18 @@ export const BLOCKS = {
   MINE_BIRCH_PLANKS: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_birch_planks.png`,
   MINE_DARK_OAK_PLANKS: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_dark_oak_planks.png`,
   MINE_JUNGLE_PLANKS: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_jungle_planks.png`,
+
+  DEV_JS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_js.png`,
+
+  // DEV_vue.png
+  // DEV_angular.png
+  // DEV_css.png
+  // DEV_git.png
+  // DEV_html.png
+  // DEV_java.png
+  // DEV_js.png
+  // DEV_react.png
+  // DEV_ts.png
 
   SM64_FONT_0: `${BLOCKS_PATH}/${SM64_FONT_BLOCKS_PATH}/SM64_font_0.png`,
   SM64_FONT_1: `${BLOCKS_PATH}/${SM64_FONT_BLOCKS_PATH}/SM64_font_1.png`,
