@@ -240,3 +240,16 @@ Create a Pull Request with those changes and **Done!**
     - cobblestones
     - barrel
     - iron, emerald, lapis blocks
+- 2024/09/12
+  - Dev Blocks
+    - js
+    - ts
+    - html
+    - css
+    - vue
+    - react
+    - angular
+    - java
+    - c#
+    - git
+  - CHESS Blocks
