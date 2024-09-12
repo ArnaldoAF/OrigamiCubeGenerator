@@ -133,8 +133,9 @@ import DEV_js from "./presets/dev/DEV_js.js";
 import DEV_ts from "./presets/dev/DEV_ts.js";
 import DEV_vue from "./presets/dev/DEV_vue.js";
 import DEV_angular from "./presets/dev/DEV_angular.js";
+import DEV_css from "./presets/dev/DEV_css.js";
 
-const Dev_Blocks = [DEV_js, DEV_ts, DEV_vue, DEV_angular];
+const Dev_Blocks = [DEV_js, DEV_ts, DEV_vue, DEV_angular, DEV_css];
 
 const Minecraft_Blocks = [
   MINE_bamboo,
