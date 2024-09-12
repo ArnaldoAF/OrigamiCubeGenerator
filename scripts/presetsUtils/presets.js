@@ -137,6 +137,7 @@ import DEV_css from "./presets/dev/DEV_css.js";
 import DEV_git from "./presets/dev/DEV_git.js";
 import DEV_html from "./presets/dev/DEV_html.js";
 import DEV_java from "./presets/dev/DEV_java.js";
+import DEV_react from "./presets/dev/DEV_react.js";
 
 const Dev_Blocks = [
   DEV_js,
@@ -147,6 +148,7 @@ const Dev_Blocks = [
   DEV_git,
   DEV_html,
   DEV_java,
+  DEV_react,
 ];
 
 const Minecraft_Blocks = [
