@@ -135,8 +135,17 @@ import DEV_vue from "./presets/dev/DEV_vue.js";
 import DEV_angular from "./presets/dev/DEV_angular.js";
 import DEV_css from "./presets/dev/DEV_css.js";
 import DEV_git from "./presets/dev/DEV_git.js";
+import DEV_html from "./presets/dev/DEV_html.js";
 
-const Dev_Blocks = [DEV_js, DEV_ts, DEV_vue, DEV_angular, DEV_css, DEV_git];
+const Dev_Blocks = [
+  DEV_js,
+  DEV_ts,
+  DEV_vue,
+  DEV_angular,
+  DEV_css,
+  DEV_git,
+  DEV_html,
+];
 
 const Minecraft_Blocks = [
   MINE_bamboo,
