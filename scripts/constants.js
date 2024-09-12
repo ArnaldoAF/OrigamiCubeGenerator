@@ -203,6 +203,7 @@ export const MT_SLG_BLOCKS_PATH = "metal_slug";
 export const SMW_BLOCKS_PATH = "super_mario_world";
 export const MINE_BLOCKS_PATH = "minecraft";
 export const DEV_BLOCKS_PATH = "dev";
+export const CHESS_PATH = "chess";
 
 export const SM64_FONT_BLOCKS_PATH = "super_mario64_font";
 
@@ -340,6 +341,20 @@ export const BLOCKS = {
   DEV_TS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_ts.png`,
   DEV_C_SHARP: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_c_sharp.png`,
 
+  CHESS_BISHOP: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_bishop.png`,
+  CHESS_KING: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_king.png`,
+  CHESS_KNIGHT: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_knight.png`,
+  CHESS_PAWN: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_pawn.png`,
+  CHESS_QUEEN: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_queen.png`,
+  CHESS_ROOK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_rook.png`,
+
+  CHESS_BISHOP_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_bishop_black.png`,
+  CHESS_KING_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_king_black.png`,
+  CHESS_KNIGHT_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_knight_black.png`,
+  CHESS_PAWN_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_pawn_black.png`,
+  CHESS_QUEEN_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_queen_black.png`,
+  CHESS_ROOK_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_rook_black.png`,
+
   // DEV_vue.png
   // DEV_angular.png
   // DEV_css.png
@@ -349,6 +364,13 @@ export const BLOCKS = {
   // DEV_js.png
   // DEV_react.png
   // DEV_ts.png
+
+  //CHESS_bishop.png
+  //CHESS_king.png
+  //CHESS_knight.png
+  //CHESS_pawn.png
+  //CHESS_queen.png
+  //CHESS_rook.png
 
   SM64_FONT_0: `${BLOCKS_PATH}/${SM64_FONT_BLOCKS_PATH}/SM64_font_0.png`,
   SM64_FONT_1: `${BLOCKS_PATH}/${SM64_FONT_BLOCKS_PATH}/SM64_font_1.png`,
