@@ -329,7 +329,15 @@ export const BLOCKS = {
   MINE_DARK_OAK_PLANKS: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_dark_oak_planks.png`,
   MINE_JUNGLE_PLANKS: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_jungle_planks.png`,
 
+  DEV_VUE: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_vue.png`,
+  DEV_ANGULAR: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_angular.png`,
+  DEV_CSS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_css.png`,
+  DEV_GIT: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_git.png`,
+  DEV_HTML: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_html.png`,
+  DEV_JAVA: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_java.png`,
   DEV_JS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_js.png`,
+  DEV_REACT: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_react.png`,
+  DEV_TS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_ts.png`,
 
   // DEV_vue.png
   // DEV_angular.png

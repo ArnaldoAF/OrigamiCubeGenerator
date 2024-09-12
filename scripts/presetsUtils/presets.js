@@ -130,8 +130,9 @@ import SM64_font_Y from "./presets/super_mario64_font/SM64_font_Y.js";
 import SM64_font_Z from "./presets/super_mario64_font/SM64_font_Z.js";
 
 import DEV_js from "./presets/dev/DEV_js.js";
+import DEV_ts from "./presets/dev/DEV_ts.js";
 
-const Dev_Blocks = [DEV_js];
+const Dev_Blocks = [DEV_js, DEV_ts];
 
 const Minecraft_Blocks = [
   MINE_bamboo,
