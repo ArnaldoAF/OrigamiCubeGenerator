@@ -87,6 +87,10 @@ import MINE_pumpkin from "./presets/minecraft/MINE_pumpkin.js";
 import MINE_lapis_block from "./presets/minecraft/MINE_lapis_block.js";
 import MINE_oak_planks from "./presets/minecraft/MINE_oak_planks.js";
 import MINE_acacia_planks from "./presets/minecraft/MINE_acacia_planks.js";
+import MINE_bamboo_planks from "./presets/minecraft/MINE_bamboo_planks.js";
+import MINE_birch_planks from "./presets/minecraft/MINE_birch_planks.js";
+import MINE_dark_oak_planks from "./presets/minecraft/MINE_dark_oak_planks.js";
+import MINE_jungle_planks from "./presets/minecraft/MINE_jungle_planks.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -125,10 +129,57 @@ import SM64_font_X from "./presets/super_mario64_font/SM64_font_X.js";
 import SM64_font_Y from "./presets/super_mario64_font/SM64_font_Y.js";
 import SM64_font_Z from "./presets/super_mario64_font/SM64_font_Z.js";
 
-import MINE_bamboo_planks from "./presets/minecraft/MINE_bamboo_planks.js";
-import MINE_birch_planks from "./presets/minecraft/MINE_birch_planks.js";
-import MINE_dark_oak_planks from "./presets/minecraft/MINE_dark_oak_planks.js";
-import MINE_jungle_planks from "./presets/minecraft/MINE_jungle_planks.js";
+import DEV_js from "./presets/dev/DEV_js.js";
+import DEV_ts from "./presets/dev/DEV_ts.js";
+import DEV_vue from "./presets/dev/DEV_vue.js";
+import DEV_angular from "./presets/dev/DEV_angular.js";
+import DEV_css from "./presets/dev/DEV_css.js";
+import DEV_git from "./presets/dev/DEV_git.js";
+import DEV_html from "./presets/dev/DEV_html.js";
+import DEV_java from "./presets/dev/DEV_java.js";
+import DEV_react from "./presets/dev/DEV_react.js";
+import DEV_c_sharp from "./presets/dev/DEV_c_sharp.js";
+
+import CHESS_bishop from "./presets/chess/CHESS_bishop.js";
+import CHESS_king from "./presets/chess/CHESS_king.js";
+import CHESS_knight from "./presets/chess/CHESS_knight.js";
+import CHESS_pawn from "./presets/chess/CHESS_pawn.js";
+import CHESS_queen from "./presets/chess/CHESS_queen.js";
+import CHESS_rook from "./presets/chess/CHESS_rook.js";
+import CHESS_bishop_black from "./presets/chess/CHESS_bishop_black.js";
+import CHESS_king_black from "./presets/chess/CHESS_king_black.js";
+import CHESS_knight_black from "./presets/chess/CHESS_knight_black.js";
+import CHESS_pawn_black from "./presets/chess/CHESS_pawn_black.js";
+import CHESS_queen_black from "./presets/chess/CHESS_queen_black.js";
+import CHESS_rook_black from "./presets/chess/CHESS_rook_black.js";
+
+const Chess_Blocks = [
+  CHESS_bishop,
+  CHESS_king,
+  CHESS_knight,
+  CHESS_pawn,
+  CHESS_queen,
+  CHESS_rook,
+  CHESS_bishop_black,
+  CHESS_king_black,
+  CHESS_knight_black,
+  CHESS_pawn_black,
+  CHESS_queen_black,
+  CHESS_rook_black,
+];
+
+const Dev_Blocks = [
+  DEV_js,
+  DEV_ts,
+  DEV_vue,
+  DEV_angular,
+  DEV_css,
+  DEV_git,
+  DEV_html,
+  DEV_java,
+  DEV_react,
+  DEV_c_sharp,
+];
 
 const Minecraft_Blocks = [
   MINE_bamboo,
@@ -274,6 +325,8 @@ const SuperMario64Font_Blocks = [
 const Others_Blocks = [];
 
 const presetList = [
+  ...Chess_Blocks,
+  ...Dev_Blocks,
   ...Minecraft_Blocks,
   ...SuperMarioBros_Blocks,
   ...MarioBros_Blocks,

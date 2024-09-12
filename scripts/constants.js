@@ -202,6 +202,9 @@ export const SMB_BLOCKS_PATH = "super_mario_bros";
 export const MT_SLG_BLOCKS_PATH = "metal_slug";
 export const SMW_BLOCKS_PATH = "super_mario_world";
 export const MINE_BLOCKS_PATH = "minecraft";
+export const DEV_BLOCKS_PATH = "dev";
+export const CHESS_PATH = "chess";
+
 export const SM64_FONT_BLOCKS_PATH = "super_mario64_font";
 
 export const BLOCKS = {
@@ -254,14 +257,6 @@ export const BLOCKS = {
   SMW_SWITCH_OFF: `${BLOCKS_PATH}/${SMW_BLOCKS_PATH}/SMW_switch_block_OFF.png`,
   SMW_SWITCH_ON: `${BLOCKS_PATH}/${SMW_BLOCKS_PATH}/SMW_switch_block_ON.png`,
   SMW_USED: `${BLOCKS_PATH}/${SMW_BLOCKS_PATH}/SMW_used_block.png`,
-
-  //   MINE_BAMBOO_TOP: `${BLOCKS_PATH}/MINE_bamboo_block_top.png`,
-  //   MINE_BAMBOO: `${BLOCKS_PATH}/MINE_bamboo_block.png`,
-  //   MINE_BEE_NEST_BOTTOM: `${BLOCKS_PATH}/MINE_bee_nest_bottom.png`,
-  //   MINE_BEE_NEST_FRONT_HONEY: `${BLOCKS_PATH}/MINE_bee_nest_front_honey.png`,
-  //   MINE_BEE_NEST_FRONT: `${BLOCKS_PATH}/MINE_bee_nest_front.png`,
-  //   MINE_BEE_NEST_SIDE: `${BLOCKS_PATH}/MINE_bee_nest.png`,
-  //   MINE_BEE_NEST_TOP: `${BLOCKS_PATH}/MINE_bee_nest.png`,
 
   MINE_BAMBOO_BLOCK: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_bamboo_block.png`,
   MINE_BAMBOO_BLOCK_TOP: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_bamboo_block_top.png`,
@@ -334,6 +329,48 @@ export const BLOCKS = {
   MINE_BIRCH_PLANKS: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_birch_planks.png`,
   MINE_DARK_OAK_PLANKS: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_dark_oak_planks.png`,
   MINE_JUNGLE_PLANKS: `${BLOCKS_PATH}/${MINE_BLOCKS_PATH}/MINE_jungle_planks.png`,
+
+  DEV_VUE: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_vue.png`,
+  DEV_ANGULAR: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_angular.png`,
+  DEV_CSS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_css.png`,
+  DEV_GIT: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_git.png`,
+  DEV_HTML: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_html.png`,
+  DEV_JAVA: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_java.png`,
+  DEV_JS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_js.png`,
+  DEV_REACT: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_react.png`,
+  DEV_TS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_ts.png`,
+  DEV_C_SHARP: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_c_sharp.png`,
+
+  CHESS_BISHOP: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_bishop.png`,
+  CHESS_KING: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_king.png`,
+  CHESS_KNIGHT: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_knight.png`,
+  CHESS_PAWN: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_pawn.png`,
+  CHESS_QUEEN: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_queen.png`,
+  CHESS_ROOK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_rook.png`,
+
+  CHESS_BISHOP_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_bishop_black.png`,
+  CHESS_KING_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_king_black.png`,
+  CHESS_KNIGHT_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_knight_black.png`,
+  CHESS_PAWN_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_pawn_black.png`,
+  CHESS_QUEEN_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_queen_black.png`,
+  CHESS_ROOK_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_rook_black.png`,
+
+  // DEV_vue.png
+  // DEV_angular.png
+  // DEV_css.png
+  // DEV_git.png
+  // DEV_html.png
+  // DEV_java.png
+  // DEV_js.png
+  // DEV_react.png
+  // DEV_ts.png
+
+  //CHESS_bishop.png
+  //CHESS_king.png
+  //CHESS_knight.png
+  //CHESS_pawn.png
+  //CHESS_queen.png
+  //CHESS_rook.png
 
   SM64_FONT_0: `${BLOCKS_PATH}/${SM64_FONT_BLOCKS_PATH}/SM64_font_0.png`,
   SM64_FONT_1: `${BLOCKS_PATH}/${SM64_FONT_BLOCKS_PATH}/SM64_font_1.png`,
