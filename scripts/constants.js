@@ -338,6 +338,7 @@ export const BLOCKS = {
   DEV_JS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_js.png`,
   DEV_REACT: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_react.png`,
   DEV_TS: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_ts.png`,
+  DEV_C_SHARP: `${BLOCKS_PATH}/${DEV_BLOCKS_PATH}/DEV_c_sharp.png`,
 
   // DEV_vue.png
   // DEV_angular.png
