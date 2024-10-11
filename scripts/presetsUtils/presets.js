@@ -91,6 +91,15 @@ import MINE_bamboo_planks from "./presets/minecraft/MINE_bamboo_planks.js";
 import MINE_birch_planks from "./presets/minecraft/MINE_birch_planks.js";
 import MINE_dark_oak_planks from "./presets/minecraft/MINE_dark_oak_planks.js";
 import MINE_jungle_planks from "./presets/minecraft/MINE_jungle_planks.js";
+import MINE_water from "./presets/minecraft/MINE_water.js";
+import MINE_lava from "./presets/minecraft/MINE_lava.js";
+import MINE_acacia_leaves from "./presets/minecraft/MINE_acacia_leaves.js";
+import MINE_birch_leaves from "./presets/minecraft/MINE_birch_leaves.js";
+import MINE_dark_oak_leaves from "./presets/minecraft/MINE_dark_oak_leaves.js";
+import MINE_jungle_leaves from "./presets/minecraft/MINE_jungle_leaves.js";
+import MINE_mangrove_leaves from "./presets/minecraft/MINE_mangrove_leaves.js";
+import MINE_oak_leaves from "./presets/minecraft/MINE_oak_leaves.js";
+import MINE_spruce_leaves from "./presets/minecraft/MINE_spruce_leaves.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -182,6 +191,15 @@ const Dev_Blocks = [
 ];
 
 const Minecraft_Blocks = [
+  MINE_water,
+  MINE_lava,
+  MINE_acacia_leaves,
+  MINE_birch_leaves,
+  MINE_dark_oak_leaves,
+  MINE_jungle_leaves,
+  MINE_mangrove_leaves,
+  MINE_oak_leaves,
+  MINE_spruce_leaves,
   MINE_bamboo,
   MINE_beehive,
   MINE_bee_nest,

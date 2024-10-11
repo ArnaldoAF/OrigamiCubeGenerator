@@ -253,3 +253,8 @@ Create a Pull Request with those changes and **Done!**
     - c#
     - git
   - CHESS Blocks
+- 2024/10/11
+  - More minecraft blocks
+    - water
+    - lava
+    - leaves blocks
