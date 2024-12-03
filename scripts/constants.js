@@ -204,6 +204,7 @@ export const SMW_BLOCKS_PATH = "super_mario_world";
 export const MINE_BLOCKS_PATH = "minecraft";
 export const DEV_BLOCKS_PATH = "dev";
 export const CHESS_PATH = "chess";
+export const MEGAMAN_PATH = "megaman";
 
 export const SM64_FONT_BLOCKS_PATH = "super_mario64_font";
 
@@ -363,6 +364,13 @@ export const BLOCKS = {
   CHESS_PAWN_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_pawn_black.png`,
   CHESS_QUEEN_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_queen_black.png`,
   CHESS_ROOK_BLACK: `${BLOCKS_PATH}/${CHESS_PATH}/CHESS_rook_black.png`,
+
+  MM_BOMBMAN: `${BLOCKS_PATH}/${MEGAMAN_PATH}/MM_BombMan.png`,
+  MM_CUTMAN: `${BLOCKS_PATH}/${MEGAMAN_PATH}/MM_CutMan.png`,
+  MM_ELECMAN: `${BLOCKS_PATH}/${MEGAMAN_PATH}/MM_ElecMan.png`,
+  MM_FIREMAN: `${BLOCKS_PATH}/${MEGAMAN_PATH}/MM_FireMan.png`,
+  MM_GUTSMAN: `${BLOCKS_PATH}/${MEGAMAN_PATH}/MM_GutsMan.png`,
+  MM_ICEMAN: `${BLOCKS_PATH}/${MEGAMAN_PATH}/MM_IceMan.png`,
 
   // DEV_vue.png
   // DEV_angular.png

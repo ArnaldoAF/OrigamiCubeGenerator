@@ -162,6 +162,22 @@ import CHESS_pawn_black from "./presets/chess/CHESS_pawn_black.js";
 import CHESS_queen_black from "./presets/chess/CHESS_queen_black.js";
 import CHESS_rook_black from "./presets/chess/CHESS_rook_black.js";
 
+import MM_bombman from "./presets/megaman/MM_bombman.js";
+import MM_cutman from "./presets/megaman/MM_cutman.js";
+import MM_elecman from "./presets/megaman/MM_elecman.js";
+import MM_fireman from "./presets/megaman/MM_fireman.js";
+import MM_gutsman from "./presets/megaman/MM_gutsman.js";
+import MM_iceman from "./presets/megaman/MM_iceman.js";
+
+const Megaman_Blocks = [
+  MM_bombman,
+  MM_cutman,
+  MM_elecman,
+  MM_fireman,
+  MM_gutsman,
+  MM_iceman,
+];
+
 const Chess_Blocks = [
   CHESS_bishop,
   CHESS_king,
@@ -343,6 +359,7 @@ const SuperMario64Font_Blocks = [
 const Others_Blocks = [];
 
 const presetList = [
+  ...Megaman_Blocks,
   ...Chess_Blocks,
   ...Dev_Blocks,
   ...Minecraft_Blocks,
