@@ -258,3 +258,12 @@ Create a Pull Request with those changes and **Done!**
     - water
     - lava
     - leaves blocks
+
+## To Do
+
+- Metal Slug Font
+- Megaman enemies
+- RPG itens
+- Pokemon walking
+- Pokemon Items
+- 
