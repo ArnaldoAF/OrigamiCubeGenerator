@@ -261,9 +261,19 @@ Create a Pull Request with those changes and **Done!**
 
 ## To Do
 
+### Blocks
+
 - Metal Slug Font
 - Megaman enemies
 - RPG itens
 - Pokemon walking
 - Pokemon Items
-- 
+- Minecraft
+  - Rails
+
+### Interface
+
+- put cube generator on the start of the page
+- create isometric previews for pre sets cubes
+- Use sprites from assets while select image from cube
+  - Use a grid of sprites to select
