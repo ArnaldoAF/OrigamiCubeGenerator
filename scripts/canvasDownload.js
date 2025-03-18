@@ -143,6 +143,22 @@ export const htmlToCanvas = (callbackFunction) => {
     }).then(callbackFunction);
 }
 
+export const htmlToCanvasCube = (callbackFunction) => {
+    const grid = document.querySelector("#cube-out");
+
+    html2canvas(grid, {
+        onclone: (cloneDoc) => {
+            const cloneGrid = cloneDoc.querySelector("#cube-out")
+
+            // cloneGrid.classList.remove("origami-grid-normal");
+            // cloneGrid.classList.add("origami-grid-big");
+        },
+        backgroundColor: null,
+    }).then(callbackFunction);
+}
+
+export const downloadCube = () => htmlToCanvasCube(canvasToPNG);
+
 export const downloadImage = () => htmlToCanvas(canvasToPNG);
 
 export const downloadPdfBig = () => htmlToCanvas(canvasToPdfBig);

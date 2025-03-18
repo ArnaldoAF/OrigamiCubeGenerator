@@ -39,13 +39,12 @@
   max-height: 5rem;
 }
 
-
 .color-container {
   width: 6rem;
   height: 6rem;
   /* border: 1px solid black; */
   /* display: flex; */
-  /* flex-direction: column; */ 
+  /* flex-direction: column; */
 }
 
 .colorpicker-container {
@@ -84,7 +83,7 @@ label {
 }
 
 .show-flex {
-    display: flex;
+  display: flex;
 }
 
 .hide {
@@ -98,36 +97,168 @@ input[type="file"] {
 }
 
 .image-container {
-    position: relative;
-    height: 8rem;
+  position: relative;
+  height: 8rem;
 }
 
 .image-upload {
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
 }
 
 .image-preview {
-    background: gray;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0rem;
-    flex-direction: row-reverse;
-    display: flex;
+  background: gray;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0rem;
+  flex-direction: row-reverse;
+  display: flex;
 }
 
 .image-preview-close {
-    height: 30%;
-    width: 30%;
-    border: 1px solid;
-    background: black;
-    position: absolute;
-
+  height: 30%;
+  width: 30%;
+  border: 1px solid;
+  background: black;
+  position: absolute;
 }
 
 .image-preview-close {
-    position: absolute;
+  position: absolute;
+}
+
+/* --------------------------------------------------------- */
+/* CUBE */
+/* --------------------------------------------------------- */
+
+:root {
+  --cube-size-out: 100px;
+  --cube-size: var(--cube-size-out);
+  /* --face-size: 50px; */
+  --face-size: calc(var(--cube-size) / 2);
+}
+
+#cube-out {
+  /* border: 1px solid blue; */
+  box-sizing: content-box;
+  /* padding: 50px; */
+  width: var(--cube-size-out);
+  height: calc(var(--cube-size-out) + 1px);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.cube {
+  width: var(--cube-size);
+  height: calc(var(--cube-size) + 1px);
+  /* padding-left: 50px; */
+  /* padding-right: 0px; */
+  background: transparent;
+
+  /* width: 150px;
+  height: 150px; */
+  /* border: 1px solid black; */
+  box-sizing: content-box;
+  /* overflow: hidden; */
+
+  /* OUtro cubo */
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}
+
+.face {
+  transform-origin: 0 0;
+  /* position: absolute; */
+
+  border: 0.5px solid black;
+  /* box-sizing: content-box; */
+
+  /* width: 100px;
+    height: 100px; */
+
+  width: var(--face-size);
+  height: var(--face-size);
+}
+
+.front {
+  /* background: center / contain no-repeat
+    url("./assets/blocks/super_mario_bros/SMB_question.png"); */
+  background: white;
+
+  -ms-transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px)
+    scaleY(0.864);
+  -webkit-transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px)
+    scaleY(0.864);
+  /* transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864); */
+  transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+
+  position: relative;
+  top: var(--face-size);
+  left: var(--face-size);
+}
+
+.top {
+  /* background: center / contain no-repeat
+    url("./assets/blocks/super_mario_world/SMW_question_block.png"); */
+  background: white;
+
+  -ms-transform: rotate(210deg) skew(-30deg) translate(-200px, -60px)
+    scaleY(0.864);
+  -webkit-transform: rotate(210deg) skew(-30deg) translate(-200px, -60px)
+    scaleY(0.864);
+
+  /* transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864); */
+  /* transform: rotate(30deg) skew(-30deg) translate(100px, -26px) scaleY(0.864); */
+
+  transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+
+  position: relative;
+  top: calc(var(--face-size) * -1);
+  left: var(--face-size);
+
+  /* correto:
+    rotate(30deg) skew(-30deg) translate(100px, -26px) scaleY(0.864) 
+    translate(150px, 17px) - pra 50%
+
+    */
+}
+
+.side {
+  /* background: center / contain no-repeat url("./assets/blocks/MB_pow.png"); */
+  background: white;
+
+  -ms-transform: rotate(90deg) skewX(-30deg) scaleY(0.864)
+    translate(68px, -131px);
+  -webkit-transform: rotate(90deg) skewX(-30deg) scaleY(0.864)
+    translate(68px, -131px);
+
+  /* transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px) ; */
+  /* transform: rotate(30deg) skewX(30deg) scaleY(0.864) translate(30px, 70px);  */
+  transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+
+  position: relative;
+  left: var(--face-size);
+
+  /* correto:
+    transform: rotate(30deg) skewX(30deg) scaleY(0.864) translate(30px, 70px);
+translate(80px, 70px) - pra 50%
+    */
+}
+
+.img-side {
+  transform: rotate(-90deg);
+  border: 1px solid black;
+}
+
+.img-top {
+  transform: rotate(180deg);
+  border: 1px solid black;
 }
