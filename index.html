@@ -442,7 +442,7 @@
         <div
             class="max-w-sm my-4 p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center">
             <label for="preset-list" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                Choose a pre-set
+                Choose a pre-set:
             </label>
             <select id="preset-list"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -458,6 +458,26 @@
                     </path>
                 </svg>
             </button>
+
+            <label class="block mt-2 text-sm font-medium text-gray-900 dark:text-white">
+                Preview:
+            </label>
+            <div
+                class="max-w-sm my-4 p-4 border border-gray-200 flex rounded-lg  dark:bg-gray-800 dark:border-gray-700 justify-center text-center items-center">
+                <div class='cube-out'>
+                    <div class='cube'>
+                        <div class='face front'>
+                            <img src="" alt="" srcset="" class="img-front" id="cube-face-front">
+                        </div>
+                        <div class='face side '>
+                            <img src="" alt="" srcset="" class="img-side" id="cube-face-side">
+                        </div>
+                        <div class='face top'>
+                            <img src="" alt="" srcset="" class="img-top" id="cube-face-top">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -507,7 +527,7 @@
             </li>
         </ul>
 
-        <div id='cube-out'>
+        <div class='cube-out'>
 
             <div class='cube'>
                 <div class='face front'>

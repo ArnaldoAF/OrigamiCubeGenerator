@@ -141,7 +141,7 @@ input[type="file"] {
   --face-size: calc(var(--cube-size) / 2);
 }
 
-#cube-out {
+.cube-out {
   /* border: 1px solid blue; */
   box-sizing: content-box;
   /* padding: 50px; */
@@ -186,6 +186,11 @@ input[type="file"] {
 
   width: var(--face-size);
   height: var(--face-size);
+}
+
+.face > img {
+  height: 100%;
+  width: 100%;
 }
 
 .front {
@@ -255,10 +260,10 @@ translate(80px, 70px) - pra 50%
 
 .img-side {
   transform: rotate(-90deg);
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .img-top {
   transform: rotate(180deg);
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
