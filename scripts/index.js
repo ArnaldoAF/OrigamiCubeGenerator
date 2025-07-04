@@ -25,7 +25,9 @@ import {
     downloadImage,
     downloadPdfBig,
     downloadPdfMedium,
-    downloadPdfSmall
+    downloadPdfSmall,
+
+    downloadCube
 } from './canvasDownload.js';
 
 import presetList from './presetsUtils/presets.js';
@@ -70,6 +72,8 @@ function addEventFunctions() {
     document.querySelector("#apply-all").addEventListener('click', ApplyChangeCells);
 
     document.querySelector("#apply-preset").addEventListener('click', ApplyPreset);
+
+    document.querySelector("#download-cube").addEventListener('click', downloadCube);
 
     document.querySelector("#download-image").addEventListener('click', downloadImage);
     document.querySelector("#download-pdf").addEventListener('click', downloadPdfBig);

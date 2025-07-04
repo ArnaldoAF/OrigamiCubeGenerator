@@ -258,6 +258,8 @@ Create a Pull Request with those changes and **Done!**
     - water
     - lava
     - leaves blocks
+- 2025/07/04
+  - Preview in a Isometric Cube shape
 
 ## To Do
 

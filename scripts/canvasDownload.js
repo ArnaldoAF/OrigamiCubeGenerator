@@ -1,4 +1,4 @@
-import { 
+import {
     FILE_NAME,
     PDF_OPTIONS_BIG,
     PDF_OPTIONS_MEDIUM,
@@ -35,11 +35,11 @@ export const canvasToPdfBig = (canvas) => {
     const doc = new jsPDF();
 
     doc.addImage(
-        image, 
-        'PNG', 
-        PDF_OPTIONS_BIG.X, 
-        PDF_OPTIONS_BIG.Y, 
-        PDF_OPTIONS_BIG.WIDTH, 
+        image,
+        'PNG',
+        PDF_OPTIONS_BIG.X,
+        PDF_OPTIONS_BIG.Y,
+        PDF_OPTIONS_BIG.WIDTH,
         PDF_OPTIONS_BIG.HEIGHT
     );
     doc.save(`${FILE_NAME}.pdf`);
@@ -56,20 +56,20 @@ export const canvasToPdfMedium = (canvas) => {
     const doc = new jsPDF();
 
     doc.addImage(
-        image, 
-        'PNG', 
-        PDF_OPTIONS_MEDIUM.SQUARE1.X, 
-        PDF_OPTIONS_MEDIUM.SQUARE1.Y, 
-        PDF_OPTIONS_MEDIUM.WIDTH, 
+        image,
+        'PNG',
+        PDF_OPTIONS_MEDIUM.SQUARE1.X,
+        PDF_OPTIONS_MEDIUM.SQUARE1.Y,
+        PDF_OPTIONS_MEDIUM.WIDTH,
         PDF_OPTIONS_MEDIUM.HEIGHT
     );
 
     doc.addImage(
-        image, 
-        'PNG', 
-        PDF_OPTIONS_MEDIUM.SQUARE2.X, 
-        PDF_OPTIONS_MEDIUM.SQUARE2.Y, 
-        PDF_OPTIONS_MEDIUM.WIDTH, 
+        image,
+        'PNG',
+        PDF_OPTIONS_MEDIUM.SQUARE2.X,
+        PDF_OPTIONS_MEDIUM.SQUARE2.Y,
+        PDF_OPTIONS_MEDIUM.WIDTH,
         PDF_OPTIONS_MEDIUM.HEIGHT
     );
 
@@ -87,38 +87,38 @@ export const canvasToPdfSmall = (canvas) => {
     const doc = new jsPDF();
 
     doc.addImage(
-        image, 
-        'PNG', 
-        PDF_OPTIONS_SMALL.SQUARE1.X, 
-        PDF_OPTIONS_SMALL.SQUARE1.Y, 
-        PDF_OPTIONS_SMALL.WIDTH, 
+        image,
+        'PNG',
+        PDF_OPTIONS_SMALL.SQUARE1.X,
+        PDF_OPTIONS_SMALL.SQUARE1.Y,
+        PDF_OPTIONS_SMALL.WIDTH,
         PDF_OPTIONS_SMALL.HEIGHT
     );
 
     doc.addImage(
-        image, 
-        'PNG', 
-        PDF_OPTIONS_SMALL.SQUARE2.X, 
-        PDF_OPTIONS_SMALL.SQUARE2.Y, 
-        PDF_OPTIONS_SMALL.WIDTH, 
+        image,
+        'PNG',
+        PDF_OPTIONS_SMALL.SQUARE2.X,
+        PDF_OPTIONS_SMALL.SQUARE2.Y,
+        PDF_OPTIONS_SMALL.WIDTH,
         PDF_OPTIONS_SMALL.HEIGHT
     );
 
     doc.addImage(
-        image, 
-        'PNG', 
-        PDF_OPTIONS_SMALL.SQUARE3.X, 
-        PDF_OPTIONS_SMALL.SQUARE3.Y, 
-        PDF_OPTIONS_SMALL.WIDTH, 
+        image,
+        'PNG',
+        PDF_OPTIONS_SMALL.SQUARE3.X,
+        PDF_OPTIONS_SMALL.SQUARE3.Y,
+        PDF_OPTIONS_SMALL.WIDTH,
         PDF_OPTIONS_SMALL.HEIGHT
     );
 
     doc.addImage(
-        image, 
-        'PNG', 
-        PDF_OPTIONS_SMALL.SQUARE4.X, 
-        PDF_OPTIONS_SMALL.SQUARE4.Y, 
-        PDF_OPTIONS_SMALL.WIDTH, 
+        image,
+        'PNG',
+        PDF_OPTIONS_SMALL.SQUARE4.X,
+        PDF_OPTIONS_SMALL.SQUARE4.Y,
+        PDF_OPTIONS_SMALL.WIDTH,
         PDF_OPTIONS_SMALL.HEIGHT
     );
 
@@ -142,6 +142,22 @@ export const htmlToCanvas = (callbackFunction) => {
         }
     }).then(callbackFunction);
 }
+
+export const htmlToCanvasCube = (callbackFunction) => {
+    const grid = document.querySelector("#cube-footer");
+
+    html2canvas(grid, {
+        onclone: (cloneDoc) => {
+            const cloneGrid = cloneDoc.querySelector("#cube-out")
+
+            // cloneGrid.classList.remove("origami-grid-normal");
+            // cloneGrid.classList.add("origami-grid-big");
+        },
+        backgroundColor: null,
+    }).then(callbackFunction);
+}
+
+export const downloadCube = () => htmlToCanvasCube(canvasToPNG);
 
 export const downloadImage = () => htmlToCanvas(canvasToPNG);
 
