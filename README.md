@@ -210,9 +210,9 @@ The script will do the following:
 
 - Create a folder for your font on the `scripts/presetsUtils/presets/`
 - Log on the console:
-    - Constants declarations with the image path for the `constants.js` file
-    - Imports to the `presets.js` file
-    - List of the presets to the `presets.js` file
+  - Constants declarations with the image path for the `constants.js` file
+  - Imports to the `presets.js` file
+  - List of the presets to the `presets.js` file
 - Create all the pre-sets files for each letter/Number and put them on the folder created earlier
 
 
@@ -222,13 +222,13 @@ Create a Pull Request with those changes and **Done!**
 ## Change log 
 
 - 2023/04/24 
-    - add 43 new pre sets
+  - add 43 new pre sets
 - 2024/07/15 
-    - add Minecraft blocks
-    - organized pre sets and assests in folders
+  - add Minecraft blocks
+  - organized pre sets and assests in folders
 - 2024/07/29
-    - SuperMario 64 font pre-sets added
-    - fontGenerator helper added - a script that help create block for letters and numbers
+  - SuperMario 64 font pre-sets added
+  - fontGenerator helper added - a script that help create block for letters and numbers
 - 2024/08/28
   - more minecraft blocks:
     - logs
@@ -260,3 +260,17 @@ Create a Pull Request with those changes and **Done!**
     - leaves blocks
 - 2025/07/04
   - Preview in a Isometric Cube shape
+
+## To Do
+
+- Metal Slug Font
+- Megaman enemies
+- RPG itens
+- Pokemon walking
+- Pokemon Items
+- Dice Marker(1-6, 7-12, 13-18, 19-24, 25-30... etc)
+- Blasphemous (<https://blasphemous.fandom.com/wiki/Blasphemous_Wiki>)
+  - Achievements
+  - Rosary Beads
+  - Relics
+  - Mea Culpa Hearts
