@@ -179,6 +179,16 @@ import MM2_quickman from "./presets/megaman/MM2_quickman.js";
 import MM2_woodman from "./presets/megaman/MM2_woodman.js";
 import MM2_drwilly from "./presets/megaman/MM2_drwilly.js";
 
+import MM3_breakman from "./presets/megaman/MM3_breakman.js";
+import MM3_geminiman from "./presets/megaman/MM3_geminiman.js";
+import MM3_hardman from "./presets/megaman/MM3_hardman.js";
+import MM3_magnetman from "./presets/megaman/MM3_magnetman.js";
+import MM3_needleman from "./presets/megaman/MM3_needleman.js";
+import MM3_shadowman from "./presets/megaman/MM3_shadowman.js";
+import MM3_snakeman from "./presets/megaman/MM3_snakeman.js";
+import MM3_sparkman from "./presets/megaman/MM3_sparkman.js";
+import MM3_topman from "./presets/megaman/MM3_topman.js";
+
 const Megaman_Blocks = [
   MM_bombman,
   MM_cutman,
@@ -196,6 +206,16 @@ const Megaman_Blocks = [
   MM2_quickman,
   MM2_woodman,
   MM2_drwilly,
+
+  MM3_breakman,
+  MM3_geminiman,
+  MM3_hardman,
+  MM3_magnetman,
+  MM3_needleman,
+  MM3_shadowman,
+  MM3_snakeman,
+  MM3_sparkman,
+  MM3_topman,
 ];
 
 const Chess_Blocks = [
