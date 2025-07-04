@@ -270,6 +270,12 @@ Create a Pull Request with those changes and **Done!**
 - Pokemon Items
 - Minecraft
   - Rails
+- Dice Marker(1-6, 7-12, 13-18, 19-24, 25-30... etc)
+- Blasphemous (<https://blasphemous.fandom.com/wiki/Blasphemous_Wiki>)
+  - Achievements
+  - Rosary Beads
+  - Relics
+  - Mea Culpa Hearts
 
 ### Interface
 
