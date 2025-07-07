@@ -100,6 +100,8 @@ import MINE_jungle_leaves from "./presets/minecraft/MINE_jungle_leaves.js";
 import MINE_mangrove_leaves from "./presets/minecraft/MINE_mangrove_leaves.js";
 import MINE_oak_leaves from "./presets/minecraft/MINE_oak_leaves.js";
 import MINE_spruce_leaves from "./presets/minecraft/MINE_spruce_leaves.js";
+import MINE_rail from "./presets/minecraft/MINE_rail.js";
+import MINE_rail_turned from "./presets/minecraft/MINE_rail_turned.js";
 
 import SM64_font_0 from "./presets/super_mario64_font/SM64_font_0.js";
 import SM64_font_1 from "./presets/super_mario64_font/SM64_font_1.js";
@@ -191,6 +193,9 @@ const Dev_Blocks = [
 ];
 
 const Minecraft_Blocks = [
+  MINE_grass,
+  MINE_rail,
+  MINE_rail_turned,
   MINE_water,
   MINE_lava,
   MINE_acacia_leaves,
@@ -220,7 +225,6 @@ const Minecraft_Blocks = [
   MINE_lapis_ore,
   MINE_cobblestone,
   MINE_cobblestone_mossy,
-  MINE_grass,
   MINE_oak_log,
   MINE_dark_oak_log,
   MINE_acacia_log,
