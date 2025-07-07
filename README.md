@@ -260,6 +260,10 @@ Create a Pull Request with those changes and **Done!**
     - leaves blocks
 - 2025/07/04
   - Preview in a Isometric Cube shape
+- 2025/07/07
+  - Minecraft Cubes
+    - Rail
+    - Rail turned
 
 ## To Do
 
