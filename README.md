@@ -278,3 +278,4 @@ Create a Pull Request with those changes and **Done!**
   - Rosary Beads
   - Relics
   - Mea Culpa Hearts
+- Tic Tac Toe - Tokens
